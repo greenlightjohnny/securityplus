@@ -1,4 +1,5 @@
 .rant {
     border: 2px solid blue;
-    padding: 1rem;
+    padding: 0 1rem;
+    border-radius: 10px;
 }
