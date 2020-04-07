@@ -1,0 +1,12 @@
+.isee {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    font-size: .9rem;
+}
+
+.line {
+    border: 2px solid black;
+    padding-top: 1rem;
+    border-radius: 10px;
+}
