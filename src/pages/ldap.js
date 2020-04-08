@@ -52,8 +52,9 @@ const Ldap = props => (
 
             <h3>You are here:</h3>
             <p>Section 4.0, sub-section 4.2, item LDAP.
-                We covered LDAP, mentioned SSL, SSO, LDAP use cases, authentication.
+                We covered LDAP, mentioned SSL, SSO introduction, LDAP use cases, authentication.
             </p>
+            <Link to="/ldap">Previous: LDAP</Link> <Link style={{ float: `right`}} to="/tacacs">Next: TACACS+</Link>
     </Layout>
 )
 

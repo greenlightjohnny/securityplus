@@ -13,7 +13,7 @@ const Index = props => (
       The Sec+ certification is a requirement for a ton of US Government jobs, especially those in IT. How did this happen? Well basically CompTIA spent a ton of money lobbying the government (this is legal bribery) to make the Security+ exam fulfill a bunch of government red tape requirements, which the CompTIA totally had no influence over creating whatsoever.
       </p>
       <div className={Styles.line}>
-          <h4>Fast links to each section</h4>
+          <h4 style={{ marginTop: 0, paddingLeft: `1rem`}}>Map to GLORY! Onwards!</h4>
             <ul>
                 <li className={Styles.isee}> <Link to="/ldap">LDAP: Lightweight Directory Access Protocol</Link></li>
 

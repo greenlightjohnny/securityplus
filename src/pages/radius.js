@@ -38,7 +38,7 @@ const Radius = props => (
             </p>
 
 
-<Link to="/tacacs">Previous: TACACS+</Link> <Link style={{ float: `right`}} to="/radius">Next: RADIUS</Link>
+<Link to="/tacacs">Previous: TACACS+</Link> <Link style={{ float: `right`}} to="/saml">Next: SAML</Link>
     </Layout>
 )
 
