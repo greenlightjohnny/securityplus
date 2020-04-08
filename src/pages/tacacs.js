@@ -38,7 +38,7 @@ const Tacacs = props => (
         </p>
 
 
-<Link to="/kerberos">Previous: Kerberos</Link> <Link style={{ float: `right`}} to="/tacacs">Next: TACACS+</Link>
+<Link to="/kerberos">Previous: Kerberos</Link> <Link style={{ float: `right`}} to="/radius">Next: RADIUS</Link>
     </Layout>
 )
 
