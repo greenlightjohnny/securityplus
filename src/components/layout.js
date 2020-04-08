@@ -19,7 +19,7 @@ export default ({ children }) => (
             </ul>
             
         </header>
-        <h3>Page title</h3>
+        
         {children}
     </div>
 ) 

@@ -2,6 +2,8 @@ import React from "react"
 import Layout from '../components/layout'
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import Styles from "./id.module.css"
+import { Link } from "gatsby"
 import Main from '../components/mainstyle.module.css'
 const Index = props => (
   <Layout>
@@ -10,6 +12,34 @@ const Index = props => (
       
       The Sec+ certification is a requirement for a ton of US Government jobs, especially those in IT. How did this happen? Well basically CompTIA spent a ton of money lobbying the government (this is legal bribery) to make the Security+ exam fulfill a bunch of government red tape requirements, which the CompTIA totally had no influence over creating whatsoever.
       </p>
+      <div className={Styles.line}>
+          <h4>Fast links to each section</h4>
+            <ul>
+                <li className={Styles.isee}> <Link to="/ldap">LDAP: Lightweight Directory Access Protocol</Link></li>
+
+                <li className={Styles.isee}><Link to="/kerberos">Kerberos, Three headed guard dog</Link></li>
+
+                <li className={Styles.isee}><Link to="/">TACACS+: Terminal Access Controller Access Control Plus</Link></li>
+
+                <li className={Styles.isee}><Link to="/identityandaccessmanagement">4.0 Identity and Access Management</Link></li>
+
+                <li className={Styles.isee}><Link to="/">CHAP: Challenge Handshake Authentication Protocol</Link></li>
+
+                <li className={Styles.isee}><Link to="/">MSCHAP: Microsoft Challenge Handshake Authentication Protocol</Link></li>
+
+                <li className={Styles.isee}><Link to="/">RADIUS: Remote Authentication Dail-In User Service</Link></li>
+
+                <li className={Styles.isee}><Link to="/">SAML: Security Assertion Markup Language</Link></li>
+
+                <li className={Styles.isee}><Link to="/">OpenID Connect</Link></li>
+
+                <li className={Styles.isee}><Link to="/">OAuth: Open AuthorizationLink></Link></li>
+
+                <li className={Styles.isee}><Link to="/">Shibboleth: Authentication</Link></li>
+                <li className={Styles.isee}><Link to="/">Secure Token</Link></li>
+                <li className={Styles.isee}><Link to="/">NTLM: New Technology LAN Manager</Link></li>
+            </ul>
+            </div>
 
       <div>
         <h3>CompTIA Security+ test details:</h3>
@@ -29,7 +59,8 @@ const Index = props => (
         <h3>Let's go fam, we got this</h3>
         <p>Print out the official exam guide, 28 pages, and keep it handy while you study. <br></br>
         <a href="https://tinyurl.com/y4cumcgh">CompTIA Security+ Objectives</a><br></br>
-        It also helps to keep it open in another browser window, using "control + f" to look things up. <br></br>Don't feel overwhelmed, there is a ton of crossover between the sections. For example, 4.0 covers "Identity and Access Management", but also has bits of 1.0 "Threats, Attacks and Vulnerabilities" along with 2.0 "Technologies and Tools" and of course the crowd favorite 6.0 "Cryptography and PKI". It's all a big spiderweb, everything is connected. At first it won't make much sense, but gradually it will come into focus. Keep your eye on the prize and just know that you can and will get there.
+        It also helps to keep it open in another browser window, using "control + f" to look things up. <br></br>Don't feel overwhelmed, there is a ton of crossover between the sections. For example, 4.0 covers "Identity and Access Management", but also has bits of 1.0 "Threats, Attacks and Vulnerabilities" along with 2.0 "Technologies and Tools" and of course the crowd favorite 6.0 "Cryptography and PKI". It's all a big spiderweb, everything is connected. At first it won't make much sense, but gradually it will come into focus. Keep your eye on the prize and just know that you can and will get there. <br></br>
+        Jump on in, the water is fine! Kicking this off with section 4.0, Identity and Access Management
          </p>
       </div>
 

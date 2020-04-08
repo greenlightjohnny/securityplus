@@ -28,7 +28,7 @@ const Idtwo = props => (
             <ul>
                 <li className={Styles.isee}> <Link to="/ldap">LDAP: Lightweight Directory Access Protocol</Link></li>
 
-                <li className={Styles.isee}><Link to="/">Kerberos, Three headed guard dog</Link></li>
+                <li className={Styles.isee}><Link to="/kerberos">Kerberos, Three headed guard dog</Link></li>
 
                 <li className={Styles.isee}><Link to="/">TACACS+: Terminal Access Controller Access Control Plus</Link></li>
 
@@ -76,6 +76,16 @@ export const query = graphql`
         }
       }
     }
+
+
+    front2: file(relativePath: { eq: "details.png" }) {
+        childImageSharp {
+         
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
 
   
 
