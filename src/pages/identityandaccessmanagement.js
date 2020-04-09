@@ -29,23 +29,23 @@ const Idman = props => (
 
                 <li className={Styles.isee}><Link to="/">TACACS+</Link></li>
 
-                <li className={Styles.isee}><Link to="/identityandaccessmanagement">4.0 </Link></li>
+                <li className={Styles.isee}><Link to="/pap">PAP </Link></li>
 
-                <li className={Styles.isee}><Link to="/">CHAP</Link></li>
+                <li className={Styles.isee}><Link to="/chap">CHAP</Link></li>
 
-                <li className={Styles.isee}><Link to="/">MSCHAP</Link></li>
+                <li className={Styles.isee}><Link to="/mschap">MSCHAP</Link></li>
 
-                <li className={Styles.isee}><Link to="/">RADIUS</Link></li>
+                <li className={Styles.isee}><Link to="/radius">RADIUS</Link></li>
 
-                <li className={Styles.isee}><Link to="/">SAML</Link></li>
+                <li className={Styles.isee}><Link to="/saml">SAML</Link></li>
 
-                <li className={Styles.isee}><Link to="/">OpenID Connect</Link></li>
+                <li className={Styles.isee}><Link to="/openid">OpenID Connect</Link></li>
 
-                <li className={Styles.isee}><Link to="/">OAuth></Link></li>
+                <li className={Styles.isee}><Link to="/oauth">OAuth</Link></li>
 
-                <li className={Styles.isee}><Link to="/">Shibboleth</Link></li>
-                <li className={Styles.isee}><Link to="/">Secure Token</Link></li>
-                <li className={Styles.isee}><Link to="/">NTLM</Link></li>
+                <li className={Styles.isee}><Link to="/shibboleth">Shibboleth</Link></li>
+                <li className={Styles.isee}><Link to="/securetoken">Secure Token</Link></li>
+                <li className={Styles.isee}><Link to="/ntlm">NTLM</Link></li>
             </ul>
             </div>
           </div>

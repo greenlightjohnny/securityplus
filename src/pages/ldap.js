@@ -43,18 +43,19 @@ const Ldap = props => (
 
             <div>
             <Img fluid={props.data.front3.childImageSharp.fluid} />
-            <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>An LDAP configuration setup screen, you might have to fill something like this out on the test.</p>
+            <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>An LDAP configuration setup screen, you might have to fill something like this out on the test. That's why you need to memorize the port numbers and protocols.</p>
             </div>
 
             <h3>Final thoughts</h3>
-            <p>The trick is in the name Directory Access Protocol. That is the main purpose of LDAP, and it provides authentication to access directories along with methods to retrieve, modify, and delete directory entries. It is not secure by default on TCP port 389, but is when using TCP port 636 (LDAPS, which uses SSL). It CAN be used for SSO (along with Kerberos and OpenID Connect). LDAP is common to interact with (without knowing it often) on company LANs via a log on screen. LDAP is also used frequently as the back end (side the user does not see) of other applications/programs to retrieve and check usernames and their passwords from</p>
+            <p>The trick is in the name Directory Access Protocol. That is the main purpose of LDAP, and it provides authentication to access directories along with methods to retrieve, modify, and delete directory entries. It is not secure by default on TCP port 389, but is when using TCP port 636 (LDAPS, which uses SSL). It CAN be used for SSO (along with Kerberos, SAML, OpenID Connect, and Shibboleth). LDAP is common to interact with (without knowing it often) on company LANs via a log on screen. LDAP is also used frequently as the back end (side the user does not see) of other applications/programs to retrieve and check usernames and passwords from.</p>
 
 
-            <h3>You are here:</h3>
-            <p>Section 4.0, sub-section 4.2, item LDAP.
-                We covered LDAP, mentioned SSL, SSO introduction, LDAP use cases, authentication.
+            <h3>Don't forget where you came from</h3>
+            <p>LDAP falls into the identity and access family (authentication and/or authorization). It can be used for authentication (username password) and SSO (Single Sign On), but it's specialty is communicating with directory servers/files using LDAP queries.
             </p>
-            <Link to="/ldap">Previous: LDAP</Link> <Link style={{ float: `right`}} to="/tacacs">Next: TACACS+</Link>
+            <Img fluid={props.data.front5.childImageSharp.fluid} />
+            <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>.</p>
+            <Link to="/identityandaccessmanagement">Previous: 4.0</Link> <Link style={{ float: `right`}} to="/ntlm">Next: NTLM</Link>
     </Layout>
 )
 
@@ -96,7 +97,15 @@ export const query = graphql`
           }
         }
       }
-  
+      
+      front5: file(relativePath: { eq: "42ldap.png" }) {
+        childImageSharp {
+         
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
 
   }
 `

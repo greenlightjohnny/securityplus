@@ -9,6 +9,7 @@
     flex: 1;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 
     h4 {
         margin-top: 0;
@@ -23,8 +24,12 @@
     flex: 1;
     max-width: 400px;
     min-width: 280px;
+    
     border: 1px solid black;
     //background-color: aqua;
     margin: 5px;
-    margin: 0 auto;
+    margin: 5px 5px;
+
+    border-radius: 10px;
+
 }
