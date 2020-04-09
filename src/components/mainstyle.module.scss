@@ -1,0 +1,30 @@
+.rant {
+    border: 2px solid blue;
+    padding: 0 1rem;
+    border-radius: 10px;
+}
+
+.fademefam {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    h4 {
+        margin-top: 0;
+        padding: 7px;
+        width: 100%;
+        
+    }
+}
+
+.flexc {
+    display: flex;
+    flex: 1;
+    max-width: 400px;
+    min-width: 280px;
+    border: 1px solid black;
+    //background-color: aqua;
+    margin: 5px;
+    margin: 0 auto;
+}

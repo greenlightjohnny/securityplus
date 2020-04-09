@@ -10,3 +10,7 @@
     padding-top: 1rem;
     border-radius: 10px;
 }
+
+.bold {
+    font-weight: bold;
+}

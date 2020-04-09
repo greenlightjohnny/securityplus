@@ -4,14 +4,33 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Styles from "./id.module.css"
 import { Link } from "gatsby"
-import Main from '../components/mainstyle.module.css'
+import Main from '../components/mainstyle.module.scss'
 const Index = props => (
   <Layout>
     <h1>GRIND Guide to The CompTIA Security+</h1>
-    <p>
-      
-      The Sec+ certification is a requirement for a ton of US Government jobs, especially those in IT. How did this happen? Well basically CompTIA spent a ton of money lobbying the government (this is legal bribery) to make the Security+ exam fulfill a bunch of government red tape requirements, which the CompTIA totally had no influence over creating whatsoever.
-      </p>
+    
+
+      <div className={Main.fademefam}>
+          <div className={Main.flexc}>
+            <h4>Section 1.0</h4>
+          </div>
+          <div className={Main.flexc}>
+            <h4>Section 2.0</h4>
+          </div>
+          <div className={Main.flexc}>
+            <h4>Section 3.0</h4>
+          </div>
+          <div className={Main.flexc}>
+            <h4><Link to="/identityandaccessmanagement">4.0 Identity and Access Management</Link></h4>
+          </div>
+          <div className={Main.flexc}>
+            <h4>Section 5.0</h4>
+          </div>
+          <div className={Main.flexc}>
+            <h4>Section 6.0</h4>
+          </div>
+
+      </div>
       <div className={Styles.line}>
           <h4 style={{ marginTop: 0, paddingLeft: `1rem`}}>Map to GLORY! Onwards!</h4>
             <ul>
