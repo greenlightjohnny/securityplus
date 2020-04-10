@@ -44,6 +44,8 @@ const Radius = props => (
             <h3>Wrap up</h3>
             <p>Keep track of the RADIUS port, UDP 1812. You might have to fill in a configuration screen. Remember it only encrypts the users password during the authentication process, nothing else. Remember that it provides AAA, and is commonly used for remote log on/authentication. Remember it is commonly used as the back end for WPA/2-Enterprise 802.1x authentication, which requires an authentication server. Remember that Diameter and TACACS+ are more secure.</p>
 
+ <Img fluid={props.data.front3.childImageSharp.fluid} />
+            <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}></p>
 
 <Link to="/tacacs">Previous: TACACS+</Link> <Link style={{ float: `right`}} to="/saml">Next: SAML</Link>
     </Layout>
@@ -73,7 +75,7 @@ export const query = graphql`
       }
     }
 
-    front3: file(relativePath: { eq: "ldapconfig.png" }) {
+    front3: file(relativePath: { eq: "42rad.png" }) {
         childImageSharp {
          
           fluid(maxWidth: 600) {

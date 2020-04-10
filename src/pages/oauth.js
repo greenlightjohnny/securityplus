@@ -39,11 +39,17 @@ const Oauth = props => (
 
             <h3>Real risks</h3>
             <p>Instead of educating users on the danger of applications sharing data, such as OAuth, the CompTIA Security+ exam thinks your time is better spent memorizing port numbers. Apparently OAuth can make things more secure, since there are now less passwords to be remembered and written down, and less websites storing user passwords. Another factor probably is that the US intelligence community has their own direct pipelines into all the data from Facebook, Google, Apple, and Microsoft and that data is incredibly useful to them. There is no backlash from the government when these companies are discovered illegal using the data from users, because the US government gets that data from them. The problem is when they sell it to third parties as anonymous meta data. Enough meta data and you can find anyone. allegedly the companies they sell it to are trusted, however it just takes one big leak and everyone will have their GPS meta data available for all to see and potentially abuse.</p>
+
+            <h3>Wrap up</h3>
+            <p>OAuth is used to share your data on an account you have on one app, with a separate account on another app. It provides authorization to share your data, not authentication.</p>
+
+            <Img fluid={props.data.front4.childImageSharp.fluid} />
+            <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}></p>
           
         
 
 
-<Link to="/shibboleth">Previous: Shibboleth</Link> <Link style={{ float: `right`}} to="/radius">Next: RADIUS</Link>
+<Link to="/openidconnect">Previous: OpenID Connect</Link> <Link style={{ float: `right`}} to="/pap">Next: PAP</Link>
     </Layout>
 )
 
@@ -80,7 +86,7 @@ export const query = graphql`
         }
       }
 
-      front4: file(relativePath: { eq: "time.png" }) {
+      front4: file(relativePath: { eq: "42oauth.png" }) {
         childImageSharp {
          
           fluid(maxWidth: 600) {

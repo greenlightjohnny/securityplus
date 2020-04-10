@@ -38,10 +38,15 @@ const Openidconnect = props => (
             <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>At least Facebook would never stoop to such levels, right guys? Right? Guys???? </p>
             </p>
 
-            <h3>Review </h3>
+            <h3>Wrap up </h3>
             <p>So OpenID Connect has large idPs, who let you use SSO to authenticate on websites which accept that OpenID Connect providers, so you don't have to create an account. You can prove your identity with authentication, and allow access so your OpenID Connect idP can share some information from that account with the SP. All without creating a new account. It is used mostly on websites, accessed by browsers. SAML is also an SSO, but the SP and idP in SAML generally have a much closer relationship. OpenID Connect allows pretty much any website to use public idPs (Google, Microsoft, Apple, Twitter, Facebook, Amazon) to use their account on any website that offers OpenID Connect for them. OpenID Connect also is much "lighter" weight than SAML, so it performs better on mobile devices.</p>
+            <Img fluid={props.data.front4.childImageSharp.fluid} />
+            <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}> </p>
 
-        <Link to="/oauth">Previous: oauth</Link> <Link style={{ float: `right`}} to="/radius">Next: RADIUS</Link>
+            
+          
+
+        <Link to="/saml">Previous: SAML</Link> <Link style={{ float: `right`}} to="/oauth">Next: OAuth</Link>
     </Layout>
     
     
@@ -78,7 +83,7 @@ export const query = graphql`
         }
       }
 
-      front4: file(relativePath: { eq: "time.png" }) {
+      front4: file(relativePath: { eq: "42opn.png" }) {
         childImageSharp {
          
           fluid(maxWidth: 600) {

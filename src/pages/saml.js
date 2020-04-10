@@ -52,15 +52,21 @@ const Saml = props => (
             </div>
      
 
-        <h3>SAML vs RADIUS/Diameter/TACACS+, LDAP, Kerberos, OpenID Connect</h3>
+        <h3>SAML vs the world</h3>
         <p><span className={Styles.bold}>SAML</span> is mostly used for corporate/enterprise level internet based SSO, and provides authentication and authorization. It does not provide accounting, so it is not AAA.<br></br>
         <span className={Styles.bold}>RADIUS/Diameter/TACACS+</span> do provide AAA, but not SSO. You need separate accounts for each service you access using RADIUS/Diameter/TACACS+, there is no central database it checks for SSO. They do not have to be web/browser based and can be used to authenticate onto a LAN or a remote via the internet. <br></br>
-        <span className={Styles.bold}>LDAP</span>also provides authentication and authorization, along with SSO, but it is more for use managing/accessing directories. It is not used for web based SSO, typically only on a local LAN. <br></br> <span className={Styles.bold}>Kerberos</span> does provide SSO like SAML, along with authentication and authorization, but they have very different use cases. Kerberos is not used for web based SSO, instead it focuses on SSO for the LAN it is connected to, and provides extremely strong security. You would not use Kerberos to log onto a website, as you would with SAML. <br></br>
+        <span className={Styles.bold}>LDAP</span> also provides authentication and authorization, along with SSO, but it is more for use managing/accessing directories. It is not used for web based SSO, typically only on a local LAN. <br></br> <span className={Styles.bold}>Kerberos</span> does provide SSO like SAML, along with authentication and authorization, but they have very different use cases. Kerberos is not used for web based SSO, instead it focuses on SSO for the LAN it is connected to, and provides extremely strong security. You would not use Kerberos to log onto a website, as you would with SAML. <br></br>
         <span className={Styles.bold}>OpenID Connect</span>OpenID Connect is the closet to SAML, and also provides web base SSO with authentication and authorization. OpenID Connect works better than SAML on mobile devices, and is used by consumers to log onto other services with accounts from large OpenID Connect providers, such as Apple, Microsoft, Google, Facebook, and Twitter. 
          </p>
 
-       
+         <h3>Still more...</h3>
+         <p>RADIUS/Diameter/TACACS+ are a central server controlling access to ONE other resource, such as a LAN or another server. SAML is a central server controlling access to MANY other resources, such as five different websites with a single set of user credentials. </p>
+         <h3>Wrap up</h3>
+         <p>If you see SAML, you should be thinking authentication for enterprise/corporate web based SSO. Shibboleth is based on SAML and is pretty much the same. The main competition is OpenID Connect, which is more consumer web based SSO.</p>
 
+       
+         <Img fluid={props.data.front3.childImageSharp.fluid} />
+            <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}></p>
             
 
         <Link to="/radius">Previous: RADIUS</Link> <Link style={{ float: `right`}} to="/Shibboleth">Next: Shibboleth</Link>
@@ -89,7 +95,7 @@ export const query = graphql`
     }
 
 
-    front3: file(relativePath: { eq: "details.png" }) {
+    front3: file(relativePath: { eq: "42sam.png" }) {
         childImageSharp {
          
           fluid(maxWidth: 600) {
