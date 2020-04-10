@@ -51,6 +51,11 @@ const Ntlm = props => (
 
         <h3>Wrapping things up</h3>
         <p>NTLM is more about authentication onto a Windows based LAN, not as much for signing onto a website. It does not provide SSO (Single Sign On), so you would have to enter your username and password in again when accessing different servers/resources on that LAN.</p>
+
+        <h3>Don't forget where you came from</h3>
+        <p>NTLM falls into the identity and access family (authentication and/or authorization). It's main use is for authorization on LANs. It it considered outdated and Kerberos should be used as a replacement.</p>
+        <Img fluid={props.data.front4.childImageSharp.fluid} />
+            <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}> </p>
         
 
 <Link to="/ldap">Previous: LDAP</Link> <Link style={{ float: `right`}} to="/kerberos">Next: Kerberos</Link>
@@ -87,7 +92,7 @@ export const query = graphql`
         }
       }
 
-      front4: file(relativePath: { eq: "time.png" }) {
+      front4: file(relativePath: { eq: "42NTLM.png" }) {
         childImageSharp {
          
           fluid(maxWidth: 600) {
