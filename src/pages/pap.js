@@ -27,9 +27,9 @@ const Pap = props => (
         <p>Not much to say here. PAP is old, and sends your password buck naked over the network. If you are into that sort of thing, go for it. CHAP (Challenge handshake Authentication Protocol) is the next step up from PAP. </p>
 
 <Img  fluid={props.data.front3.childImageSharp.fluid} />
-            <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>PAP is the worst choice for authentication over a network.
+            <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>
             </p>
-<Link to="/oauth">Previous: OAuth</Link> <Link style={{ float: `right`}} to="/pap">Next: PAP</Link>
+<Link to="/oauth">Previous: OAuth</Link> <Link style={{ float: `right`}} to="/chap">Next: CHAP</Link>
     </Layout>
 )
 export default Pap
