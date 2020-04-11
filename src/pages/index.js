@@ -27,7 +27,7 @@ const Index = props => (
             <h4>Section 5.0</h4>
           </div>
           <div className={Main.flexc}>
-            <h4>Section 6.0</h4>
+          <h4><Link to="/cryptography">6.0 Cryptography and PKI</Link></h4>
           </div>
 
       </div>

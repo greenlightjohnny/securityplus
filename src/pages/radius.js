@@ -26,6 +26,8 @@ const Radius = props => (
             <h3>WPA2-Enterprise mode using RADIUS</h3>
             <Img fluid={props.data.front.childImageSharp.fluid} />
             <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>As you can see, RADIUS is used to encapsulate EAP. You have almost certainly used RADIUS before. If you log onto a WiFi network with a password only, you are using PSK mode. However, if the WiFi Networks requires a username and password to log on, that requires an authentication server and that is usually running RADIUS</p>
+            <Img fluid={props.data.front4.childImageSharp.fluid} />
+            <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>A more simple illustration</p>
             </div>
 
             <h3>More security</h3>
@@ -85,7 +87,7 @@ export const query = graphql`
       }
 
 
- front4: file(relativePath: { eq: "ipapp.png" }) {
+ front4: file(relativePath: { eq: "rad3.jpeg" }) {
         childImageSharp {
          
           fluid(maxWidth: 600) {
