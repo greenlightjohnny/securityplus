@@ -31,34 +31,7 @@ const Index = props => (
           </div>
 
       </div>
-      <div className={Styles.line}>
-          <h4 style={{ marginTop: 0, paddingLeft: `1rem`}}>Map to GLORY! Onwards!</h4>
-            <ul>
-                <li className={Styles.isee}> <Link to="/ldap">LDAP: Lightweight Directory Access Protocol</Link></li>
-
-                <li className={Styles.isee}><Link to="/kerberos">Kerberos, Three headed guard dog</Link></li>
-
-                <li className={Styles.isee}><Link to="/">TACACS+: Terminal Access Controller Access Control Plus</Link></li>
-
-                <li className={Styles.isee}><Link to="/identityandaccessmanagement">4.0 Identity and Access Management</Link></li>
-
-                <li className={Styles.isee}><Link to="/">CHAP: Challenge Handshake Authentication Protocol</Link></li>
-
-                <li className={Styles.isee}><Link to="/">MSCHAP: Microsoft Challenge Handshake Authentication Protocol</Link></li>
-
-                <li className={Styles.isee}><Link to="/">RADIUS: Remote Authentication Dail-In User Service</Link></li>
-
-                <li className={Styles.isee}><Link to="/">SAML: Security Assertion Markup Language</Link></li>
-
-                <li className={Styles.isee}><Link to="/">OpenID Connect</Link></li>
-
-                <li className={Styles.isee}><Link to="/">OAuth: Open AuthorizationLink></Link></li>
-
-                <li className={Styles.isee}><Link to="/">Shibboleth: Authentication</Link></li>
-                <li className={Styles.isee}><Link to="/">Secure Token</Link></li>
-                <li className={Styles.isee}><Link to="/">NTLM: New Technology LAN Manager</Link></li>
-            </ul>
-            </div>
+      
 
       <div>
         <h3>CompTIA Security+ test details:</h3>

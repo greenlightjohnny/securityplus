@@ -54,7 +54,7 @@ For example, you use your Windows 10 laptop to enter the PSK (Pre-Shared Key) fo
             <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>
             </p>
 
-<Link to="/PAP">Previous: PAP</Link> <Link style={{ float: `right`}} to="/mschap">Next: MSCHAP</Link>
+<Link to="/chap">Previous: CHAP</Link> <Link style={{ float: `right`}} to="/securetoken">Next: Secure Token</Link>
     </Layout>
 )
 export default Chap

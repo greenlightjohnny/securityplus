@@ -69,7 +69,7 @@ const Saml = props => (
             <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}></p>
             
 
-        <Link to="/radius">Previous: RADIUS</Link> <Link style={{ float: `right`}} to="/Shibboleth">Next: Shibboleth</Link>
+        <Link to="/radius">Previous: RADIUS</Link> <Link style={{ float: `right`}} to="/openidconnect">Next: OpenID Connect</Link>
     </Layout>
 )
 export default Saml

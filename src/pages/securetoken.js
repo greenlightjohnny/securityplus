@@ -9,14 +9,16 @@ import { Link } from "gatsby"
 
 const Secure = props => (
     <Layout>
-        <h1>MS-CHAP: Microsoft CHAP </h1>
-        <i>"MS-CHAP is the Microsoft version of the Challenge-Handshake Authentication Protocol, CHAP. The protocol exists in two versions, MS-CHAPv1 (defined in RFC 2433) and MS-CHAPv2 (defined in RFC 2759" <br></br> -<a href="https://en.wikipedia.org/wiki/MS-CHAP">Wikipedia</a> </i>
+        <h1>Secure Token  </h1>
+        
+        <h3>What the fudge is this?</h3>
+        <p>I'm honestly not sure. All the other items on the 4.2 list are actual app/programs/software. Secure Token appears to be more of a concept, or just someone asleep at the wheel. It really does not fit in with the rest the list. I mean if they mean a token from something like SSO via Kerberos, OpenID Connect, or SAML, they are all a bit different. Unless they just want you to know what authentication services can use secure tokens. Who Knows, I'm emailing CompTIA to ask.</p>
 
 <Img  fluid={props.data.front4.childImageSharp.fluid} />
             <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>
             </p>
 
-<Link to="/chap">Previous: CHAP</Link> <Link style={{ float: `right`}} to="/securetoken">Next: Secure TOken</Link>
+<Link to="/mschap">Previous: MSCHAP</Link> <Link style={{ float: `right`}} to="/identityandaccessmanagement">Next: Done! Back to 4.0</Link>
     </Layout>
 )
 export default Secure

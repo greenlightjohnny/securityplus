@@ -39,7 +39,7 @@ const Idman = props => (
 
                 <li className={Styles.isee}><Link to="/saml">SAML</Link></li>
 
-                <li className={Styles.isee}><Link to="/openid">OpenID Connect</Link></li>
+                <li className={Styles.isee}><Link to="/openidconnect">OpenID Connect</Link></li>
 
                 <li className={Styles.isee}><Link to="/oauth">OAuth</Link></li>
 
