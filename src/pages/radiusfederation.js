@@ -30,7 +30,7 @@ const Chap = props => (
             <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>
             </p>
 
-<Link to="/802">Previous: 802</Link> <Link style={{ float: `right`}} to="/pskententerprise">Next: PSK vs Enterprise</Link>
+<Link to="/802">Previous: 802</Link> <Link style={{ float: `right`}} to="/pskenterprise">Next: PSK vs Enterprise</Link>
     </Layout>
 )
 export default Chap

@@ -35,7 +35,7 @@ const Crypt = props => (
               <div>
             <h4>6.3 Given a scenario, install and configure wireless security settings</h4>
             <ul>
-                <li className={Styles.isee}> <Link to="/cryptographicprotocols">Cryptographic Protocols</Link></li>
+                <li className={Styles.isee}> <Link to="/cryptoprotocols">Cryptographic Protocols</Link></li>
 
                 <li className={Styles.isee}><h4>Authentication Protocols:</h4></li>
 
