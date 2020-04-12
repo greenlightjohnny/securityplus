@@ -17,7 +17,19 @@ const Crypt = props => (
 
             <div className={Main.fademefam}>
           <div className={Main.flexc}>
-            <h4>6.1 Compare and contrast basic concepts of cryptography</h4>
+          <div>
+            <h4>6.1 Explain cryptography algorithms and their basic characteristics</h4>
+            <ul>
+                <li className={Styles.isee}> <Link to="/6group1">Symmetric algorithms</Link></li>
+
+                <li className={Styles.isee}><Link to="/6group1">Asymmetric algorithms</Link></li>
+
+                <li className={Styles.isee}><Link to="/6group1">Hashing</Link></li>
+                <li className={Styles.isee}><Link to="/6group1">Salt, IV, nonce</Link></li>
+                
+            </ul>
+            </div>
+
           </div>
           <div className={Main.flexc}>
             <div>
