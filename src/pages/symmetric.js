@@ -14,7 +14,10 @@ const Chap = props => (
         <Img  fluid={props.data.front.childImageSharp.fluid} />
             <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>As you can tell, symmetric encryption uses the same key to encrypt and decrypt.
             </p>
-        <p>Symmetric encryption algorithms are commonly used to encrypt data in transit, as well as encrypting data at rest. Symmetric encryption uses the same key to encrypt and decrypt the data. It can encrypt an entire disk, directory, or a single file. Symmetric encryption is faster than asymmetric encryption, and requires less system resources. The only problem is that both parties must have the same key, and transmitting it securely is a problem. The symmetric algorithms you need to know for the test are: AES, DES, 3DES, RC4, Blowfish, and Twofish. These are either "block ciphers", which break the data to be encrypted into smaller chunks before encryption, or stream ciphers. Stream ciphers encrypt the data as a continues stream, instead of breaking it off into blocks before encryption. We will cover stream vs block at the end, as well as the different modes the ciphers can operate in.</p>
+        <p>Symmetric encryption algorithms are commonly used to encrypt data in transit, as well as encrypting data at rest. Symmetric encryption uses the same key to encrypt and decrypt the data. It can encrypt an entire disk, directory, or a single file. Symmetric encryption is faster than asymmetric encryption, and requires less system resources. The only problem is that both parties must have the same key, and transmitting it securely is a problem. The symmetric algorithms you need to know for the test are: AES, DES, 3DES, RC4, Blowfish, and Twofish. These are either "block ciphers", which break the data to be encrypted into smaller chunks before encryption, or stream ciphers. </p>
+        <h3>Block size</h3>
+        <p>The plaintext that is going to be encrypted is broken into smaller chunks, the block size. This is usually given in bits. For example, a 128 bit block size means the encryption algorithm breaks the plaintext down into smaller blocks, each one 128 bits in size. Generally a larger block size is considered stronger. Once broken into blocks the encryption algorithm can process them, and there are different methods of doing this. These are the the cipher modes, how it processes the blocks of plaintext</p>
+        <p>Cipher modes are covered in the next section</p>
 
         <h3>AES: Advanced Encryption Standard</h3>
         <p>Our friends at the NIST have made AES, a symmetric block cipher, an official US Government encryption standard. The NSA has cleared it for use to secure top secret documents. AES encrypts in 128 bit block sizes. AES has three versions: AES-128, AES-192, and AES-256. As is usually the case, the 256 key version is stronger than the 128 key, but does require more time and resources. All versions are currently considered extremely strong.</p>
@@ -39,13 +42,21 @@ const Chap = props => (
         <p>Two fish is also a symmetric block cipher, related to Blowfish. Twofish uses a 128 bit block size to encryption, just like AES. Key sizes can be up to 256 bits. Twofish is considered very strong, and the only advantage AES has over it is speed. Twofish is free for anyone to use, and yet somehow people are still out there picking DES.</p>
 
         <h3>Block ciphers vs stream ciphers</h3>
-        <p>On our list all of the ciphers were block ciphers except for RC4, which is a stream cipher.</p>
+        <p>On our list all of the ciphers were block ciphers except for RC4, which is a stream cipher. Stream ciphers encrypt the plaintext as a continuous stream, a bit or byte at a time. Generally faster than block ciphers.  A block cipher takes the plaintext and breaks into smaller blocks, such as 128 bits per block with AES, and encrypts each block. Block ciphers can operate in different modes, which describe the method used to encrypt the blocks.</p>
 
-<Img  fluid={props.data.front4.childImageSharp.fluid} />
+        <h3>Cipher modes</h3>
+        <p>Block ciphers break the plaintext up into blocks before encrypting it. Cipher modes are different ways of encrypting the blocks. ECB, CBC, CTR, and GCM are all cipher modes you need to know. An example, you would use a block cipher such as Twofish and pick one of these modes to operate it in. "AES using CBC", where AES is the block cipher algorithm, and CBC is the cipher mode.</p>
+
+       
+
+        <h3>Wrap up</h3>
+        <p>You will need to keep track of which ciphers are considered the strongest and weakest, along with with key sizes for each, and encryption block sizes. Cipher modes will also need to be kept track of, for example ECB is on the out, CTR and GCM don't rely on the previous blocks and are faster, CBC chains together but is slower. IV, nonce, and XOR are also listed as terms the CompTIA wants you to know.</p>
+
+<Img  fluid={props.data.front8.childImageSharp.fluid} />
             <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>
             </p>
 
-<Link to="/chap">Previous: CHAP</Link> <Link style={{ float: `right`}} to="/securetoken">Next: Secure Token</Link>
+<Link to="/cryptography">Previous: Cryptography</Link> <Link style={{ float: `right`}} to="/ciphermodes">Next: Cipher modes</Link>
     </Layout>
 )
 export default Chap
@@ -55,7 +66,7 @@ export const query = graphql`
    front: file(relativePath: { eq: "ensym.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -64,26 +75,62 @@ export const query = graphql`
     front2: file(relativePath: { eq: "desmeme.jpeg" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
     }
 
 
-    front3: file(relativePath: { eq: "mschap3.jpeg" }) {
+    front3: file(relativePath: { eq: "ecb2.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
       }
 
-      front4: file(relativePath: { eq: "42mschap.png" }) {
+      front4: file(relativePath: { eq: "ecb3.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      front5: file(relativePath: { eq: "xor.png" }) {
+        childImageSharp {
+         
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      front6: file(relativePath: { eq: "cbc.png" }) {
+        childImageSharp {
+         
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      front7: file(relativePath: { eq: "ctr1.png" }) {
+        childImageSharp {
+         
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      front8: file(relativePath: { eq: "61a3.png" }) {
+        childImageSharp {
+         
+          fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid
           }
         }
