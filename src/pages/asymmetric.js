@@ -49,24 +49,29 @@ const Chap = props => (
             <p><span style={{ fontWeight: `bold`}}> RSA: Rivest Shamir Adleman. </span>
             RSA has been in use in 1983 and is apparently the most common asymmetric encryption algorithms. I have zero evidence to back this up. RSA is more normal, it generates public and private key pairs. The public key can be shared freely with anyone. RSA can use key sizes of over 4096-bits, and overall the larger the key size the harder it is to crack. However larger key sizes also mean more process power is needed to decrypt it, even when you have the private key. This means lower powered devices, such as mobile phones, might suffer from speed issues with larger RSA key sizes. In addition to use for exchanging symmetric keys, RSA is also used to sign digital signatures. </p>
 
-            <p><span style={{ fontWeight: `bold`}}> DSA: Digital Signature Algorithm. </span>This was developed by the NSA. That should give everyone a quick pause. The NIST (National Institute of Standards and Technology), a US Government agency that the CompTIA wants you to know about, set it as a standard for government use. DSA is used for signing documents digitally, but not for encrypting them. The terms get kind of murky, since signing is encryption. Basically DSA is not used for exchanging keys, only for attaching an encrypted signature to documents. This signature is encrypted with the senders private key. It provides authentication (proof of who it came from), non-repudiation (they can't deny sending it), and integrity (you know nothing has been changed on the attacked document, through hashing which we will cover later).</p>
+            <p><span style={{ fontWeight: `bold`}}> DSA: Digital Signature Algorithm. </span>This was developed by the NSA. That should give everyone a quick pause. The NIST (National Institute of Standards and Technology), a US Government agency that the CompTIA wants you to know about, set it as a standard for government use. DSA is used for signing documents digitally, but not for encrypting them. For example, hashing your email with SHA and encrypting "signing" that hash with your DSA private key. The terms get kind of murky, since signing is encryption. Basically DSA is not used for exchanging keys, only for attaching an encrypted signature to documents. This signature is encrypted with the senders private key. It provides authentication (proof of who it came from), non-repudiation (they can't deny sending it), and integrity (you know nothing has been changed on the attacked document, through hashing which we will cover later).</p>
 
 
 
             <p><span style={{ fontWeight: `bold`}}> ECC: Elliptical Curve Cryptography. </span>
-            Yeah this is exactly what it sounds like, using elliptical curves for cryptography. Prefectly normal! It is used for public and private key generation, digital signatures, and symmetric key exchanges, just like RSA. Apparently it uses less computer resources to calculate than RSA, so it works better on devices with weak hardware. It is newer in terms of being used, having only been around since about 2005. 
+            Yeah this is exactly what it sounds like, using elliptical curves for cryptography. Prefectly normal! It is used for public and private key generation, digital signatures, and symmetric key exchanges, just like RSA. Apparently it uses less computer resources to calculate than RSA, so it works better on devices with weak hardware. It is newer in terms of being used, having only been around since about 2005. Several DH types use ECC to generate keys.
             </p>
 
 
-            <p><span style={{ fontWeight: `bold`}}>PGP: Pretty Good Privacy. </span>The name really inspires confidence! PGP is most commonly used with emails. Also used on entire disks, files, and directories. It provides confidentiality (through encryption), authentication and non-repudiation (through hashing). It is used for encrypting and decrypting, and uses asymmetric encryption for public and private key generation. PGP is also used for digitally signing documents. PGP has many different versions, OpenPGP is one free and open source version of it. It supports many different symmetric and asymmetric encryption algorithms, so it is really more of an encryption program than a specific algorithm.  </p>
-            <p><span style={{ fontWeight: `bold`}}>DE: Diffie-Hellman.</span></p>
-            <p><span style={{ fontWeight: `bold`}}>DE: Diffie-Hellman.</span></p>
+            <p><span style={{ fontWeight: `bold`}}>PGP: Pretty Good Privacy. </span>The name really inspires confidence! PGP is most commonly used with emails. Also used on entire disks, files, and directories. It provides confidentiality (through encryption), authentication and non-repudiation (through hashing). It is used for encrypting and decrypting, and uses asymmetric encryption for public and private key generation. PGP is also used for digitally signing documents. PGP has many different versions, OpenPGP is one free and open source version of it. It supports many different symmetric and asymmetric encryption algorithms, so it is really more of an encryption program than a specific algorithm. It should be placed in a separate category, but the CompTIA but it when asymmetric algorithms. </p>
+            <p><span style={{ fontWeight: `bold`}}>GPG: GNU Privacy Guard.</span>
+            This is a free and open source software encryption program. It can be used on multiple platforms including Linux, Windows, macOS, and Android. It is not really a specific algorithms, because it can use different symmetric algorithms, different asymmetric algorithms, and different hashing algorithms. In addition it can use multiple different combinations of these. The CompTIA should probably not have place it under "asymmetric algorithms".
+            
+            </p>
+            <p>GPG can be used for key exchanges, symmetric encryption, digital signatures, and hashing. So authentication, confidence, integrity, and non-repudiation are all possible with GPG. It supports RSA and DSA for asymmetric algorithms. Symmetric ciphers supported include Blowfish, AES, Twofish, 3DES, and more. For hashing it supports MD5, RIPEMD, and most of the SHA hashes.</p>
+            <h3>Wrap up</h3>
+            <p>You will be seeing these lots. Understand the public and private key pair inside and out, and which key provides what for who. Make sure you know all the asymmetric algorithms, and what each one can be used for. Key exchange? Confidentiality? Authentication? Digital signatures?</p>
 
 <Img  fluid={props.data.front4.childImageSharp.fluid} />
             <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>
             </p>
 
-<Link to="/ciphermodes">Previous: Cipher modes </Link> <Link style={{ float: `right`}} to="/hashing">Next: Hashing algorithms</Link>
+<Link to="/ciphermodes">Previous: Cipher Modes </Link> <Link style={{ float: `right`}} to="/stretching">Next: Key stretching</Link>
     </Layout>
 )
 export default Chap
