@@ -9,12 +9,12 @@ import { Link } from "gatsby"
 
 const Modes = props => (
     <Layout>
-        <h1>Symmetric encryption algorithms</h1>
-        <i>"Symmetric-key algorithms[a] are algorithms for cryptography that use the same cryptographic keys for both encryption of plaintext and decryption of ciphertext. The keys may be identical or there may be a simple transformation to go between the two keys.[1] The keys, in practice, represent a shared secret between two or more parties that can be used to maintain a private information link.[2] This requirement that both parties have access to the secret key is one of the main drawbacks of symmetric key encryption, in comparison to public-key encryption (also known as asymmetric key encryption).[3][4] " <br></br> -<a href="https://en.wikipedia.org/wiki/Symmetric-key_algorithm">Wikipedia</a> </i>
+        <h1>Cipher modes</h1>
+        <i>"In cryptography, a block cipher mode of operation is an algorithm that uses a block cipher to provide information security such as confidentiality or authenticity. A block cipher by itself is only suitable for the secure cryptographic transformation (encryption or decryption) of one fixed-length group of bits called a block.[2] A mode of operation describes how to repeatedly apply a cipher's single-block operation to securely transform amounts of data larger than a block." <br></br> -<a href="https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation">Wikipedia</a> </i>
        
 
-        <h3>Cipher modes</h3>
-        <p>Block ciphers break the plaintext up into blocks before encrypting it. Cipher modes are different ways of encrypting the blocks. ECB, CBC, CTR, and GCM are all cipher modes you need to know. An example, you would use a block cipher such as Twofish and pick one of these modes to operate it in. "AES using CBC", where AES is the block cipher algorithm, and CBC is the cipher mode.</p>
+        <h3>Symmetric ciphers vs cipher modes</h3>
+        <p>Symmetric block cipher algorithms describe a way to encrypt a chunk of data which is a certain size. Weak the weak DES symmetric cipher encrypts a 56 bit block, while AES and Twofish encrypt a larger 128 bit block. So what if the plaintext you want to encrypt is larger than that? Well for that we have cipher modes! Cipher modes describe different ways the symmetric cipher can be operated repeatedly on different blocks of plaintext, and decrypt them to hook them all back together again. So you might see something like "AES256-ECB", and that is simply saying that the symmetric encryption algorithm AES (Advanced Encryption Algorithm) is being used with a 256 bit key size and is being operated in the ECB mode. Please don't use AES with ECB though.</p>
 
         <h3>ECB: Electronic Code Book</h3>
         <p>The most simple and also the worst. ECB encrypts every single block with the exact same key. The result is if the plaintext of one block matches the plaintext of another block, you end up with the ciphertext blocks of the two matching each other. The result of encrypting a photo with ECB can be seen below.
@@ -24,6 +24,15 @@ const Modes = props => (
             <Img  fluid={props.data.front4.childImageSharp.fluid} />
             <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>Using your block cipher in ECB mode is not an ideal first choice for sending nudes.
             </p>
+        </p>
+
+        <h3>ECB and a real world fudge up</h3>
+        <p>During the 2020 COVID19 pandemic and quarantine a ton of people needed a new way to communicate. Online classes were mandatory. Most of the software available sucked, but Zoom skyrocketed in popularity. Zoom was a video teleconferencing company, and they had some pretty user friendly software on the market. Almost overnight, it seemed, everyone was downloading and using Zoom. Zoom stated they were using the AES symmetric encryption cipher for security, which was considered very strong. News soon broke that they were using the AES-128 version instead of the more secure AES-256 version, which was double the key size. No big deal, AES-128 was still decent. Just a tiny bit weird, why would a new company pick AES-128 instead of AES-256. 
+          <p>Next stunning news broke: Zoom was running the AES-128 in ECB mode! The whole world laughed at them, and large corporations started banning the use of Zoom. It was laughable. This is such and epic fudge up that people began to suspect it had been done on purpose. No self respecting developer would pick ECB to use for security, it defied logic. Zoom had many connections to China, including funding and offices. Not only that, but the symmetric keys were apparently not kept secret, and sent through servers in China. The suspicion became that the Chinese Government had a hand in forcing Zoom to use weak encryption so they could break it and spy.
+          <Img  fluid={props.data.front9.childImageSharp.fluid} />
+            <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>Zoom executive describing their encryption prior to the shocking discovery that they were running a video conference cipher in ECB mode.
+            </p>
+          </p>
         </p>
 
         <h3>CBC: Cipher Block Chaining</h3>
@@ -51,20 +60,20 @@ const Modes = props => (
             </p> </p>
 
         <h3>Wrap up</h3>
-        <p>You will need to keep track of which ciphers are considered the strongest and weakest, along with with key sizes for each, and encryption block sizes. Cipher modes will also need to be kept track of, for example ECB is on the out, CTR and GCM don't rely on the previous blocks and are faster, CBC chains together but is slower. IV, nonce, and XOR are also listed as terms the CompTIA wants you to know.</p>
+        <p>Keep track of what cipher modes are considered strong, which are weak, which are slow, and which are fast. Also get used to looking text like "Blowfish-GCM", "AES-CBC", "AES256-GCM", and other combinations. There is no real standard for it. Sometimes the cipher is just named, other times the cipher and the key size is name, other times the cipher and mode are name, and sometimes the cipher, key size, and mode are all named.</p>
 
-<Img  fluid={props.data.front4.childImageSharp.fluid} />
+<Img  fluid={props.data.front.childImageSharp.fluid} />
             <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>
             </p>
 
-<Link to="/chap">Previous: CHAP</Link> <Link style={{ float: `right`}} to="/securetoken">Next: Secure Token</Link>
+<Link to="/symmetric">Previous: Symmetric encryption</Link> <Link style={{ float: `right`}} to="/asymmetric">Next: Asymmetric encryption </Link>
     </Layout>
 )
 export default Modes
 
 export const query = graphql`
   query {
-   front: file(relativePath: { eq: "ensym.png" }) {
+   front: file(relativePath: { eq: "62r2.png" }) {
       childImageSharp {
        
         fluid(maxWidth: 900) {
@@ -129,6 +138,15 @@ export const query = graphql`
       }
 
       front8: file(relativePath: { eq: "gcm2.png" }) {
+        childImageSharp {
+         
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      front9: file(relativePath: { eq: "zoom.jpeg" }) {
         childImageSharp {
          
           fluid(maxWidth: 800) {

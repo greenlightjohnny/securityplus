@@ -23,7 +23,7 @@ const Chap = props => (
         <p>Our friends at the NIST have made AES, a symmetric block cipher, an official US Government encryption standard. The NSA has cleared it for use to secure top secret documents. AES encrypts in 128 bit block sizes. AES has three versions: AES-128, AES-192, and AES-256. As is usually the case, the 256 key version is stronger than the 128 key, but does require more time and resources. All versions are currently considered extremely strong.</p>
 
         <h3>DES: Digital Encryption Standard</h3>
-        <p>An older block cipher algorithm which encrypts in 64 bit blocks, and has a key length of only 56 bit. It is not considered secure due to this, has has been cracked in as few as 22 minutes. People will laugh at you if you pick this as your first choice for encryption.
+        <p>An older block cipher algorithm which encrypts in 64 bit blocks, and has a key length of only 56 bits. It is not considered secure due to this, has has been cracked in as few as 22 minutes. People will laugh at you if you pick this as your first choice for encryption.
         <Img  fluid={props.data.front2.childImageSharp.fluid} />
             <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>DES is so out, AES is all the rage.
             </p>

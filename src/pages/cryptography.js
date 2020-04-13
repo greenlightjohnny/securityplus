@@ -35,9 +35,13 @@ const Crypt = props => (
             <div>
             <h4>6.2 Explain cryptography algorithms and their basic characteristics</h4>
             <ul>
-                <li className={Styles.isee}> <Link to="/ldap">LDAP</Link></li>
+                <li className={Styles.isee}> <Link to="/symmetric">Symmetric algorithms</Link></li>
 
-                <li className={Styles.isee}><Link to="/kerberos">Kerberos</Link></li>
+                <li className={Styles.isee}><Link to="/ciphermodes">Cipher Modes</Link></li>
+                <li className={Styles.isee}><Link to="/asymmetric">Asymmetric algorithms</Link></li>
+                <li className={Styles.isee}><Link to="/hashing">Hashing algorithms</Link></li>
+                <li className={Styles.isee}><Link to="/keystretching">Key stretching algorithms</Link></li>
+                <li className={Styles.isee}><Link to="/obfuscation">Obfuscation</Link></li>
 
                 
             </ul>
@@ -58,6 +62,7 @@ const Crypt = props => (
                 <li className={Styles.isee}><Link to="/radiusfed">Radius Federation</Link></li>
 
                 <li className={Styles.isee}><Link to="/wirelessmethodes">Methods</Link></li>
+                
 
                 
             </ul>
