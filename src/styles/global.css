@@ -1,7 +1,18 @@
-body {
-    background-color: red;
-}
+.light-mode {
+    background-color:#ffff;
+    color: #333;
+    transition: background-color 0.3s ease;
+  }
+.dark-mode {
+    background-color: #1a1919;
+    color: #999;
+    --bg: white;
+  --textNormal: #222;
+  --textTitle: #222;
+  --textLink: blue;
+  --hr: hsla(0, 0%, 0%, 0.2);
 
-body.dark {
-    background-color: black;
-}
+ 
+  }
+
+  

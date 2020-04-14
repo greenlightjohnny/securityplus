@@ -2,14 +2,20 @@ import React from "react"
 import Layout from '../components/layout'
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import Styles from "./id.module.css"
+import Pandasvg from '../images/panda.svg'
+
 import { Link } from "gatsby"
 import Main from '../components/mainstyle.module.scss'
+const Panda = () => <><img className={Main.panda} style={{ height: `200px`, marginBottom: `0px`}} src={Pandasvg} /></>
 const Index = props => (
   <Layout>
-    <h1>GRIND Guide to The CompTIA Security+</h1>
-    
+    <h1 className={Main.topmargin}>CompTIA Security+ </h1>
+    <h4 className={Main.lowmargin}>Misery. Memes. Mastery.</h4>
+    <div className={Main.pandafloat}>
+    <Panda />
 
+    </div>
+    
       <div className={Main.fademefam}>
           <div className={Main.flexc}>
             <h4>Section 1.0</h4>
@@ -57,7 +63,7 @@ export const query = graphql`
    front: file(relativePath: { eq: "objectives2.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -66,7 +72,16 @@ export const query = graphql`
     front2: file(relativePath: { eq: "details.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    front3: file(relativePath: { eq: "details.png" }) {
+      childImageSharp {
+       
+        fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }

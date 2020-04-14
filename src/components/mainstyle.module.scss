@@ -1,8 +1,5 @@
-.rant {
-    border: 2px solid blue;
-    padding: 0 1rem;
-    border-radius: 10px;
-}
+@import "../styles/global.css";
+
 
 .fademefam {
     display: flex;
@@ -18,6 +15,29 @@
         
     }
 }
+
+p {
+    color: var(--bg)
+}
+
+h3, h1, h4 {
+    color: var(--bg)
+}
+
+.lowmargin {
+    margin-top: 0;
+    //margin-bottom: 0;
+}
+.topmargin {
+    margin-bottom: 0;
+}
+
+.pandafloat {
+    display: flex;
+    justify-content: end;
+}
+
+
 
 .flexc {
     display: flex;
@@ -53,6 +73,7 @@
         color:  #6246ea;
         text-decoration: none;
         background-image: none;
+        text-shadow: none;
     }
 
     a:hover {
@@ -61,10 +82,31 @@
     }
 }
 
-.footer {
-    text-align: center;
+// // .footer {
+// //     text-align: center;
+// //     color: #f4f4f4;
+// //     background-color: #181d22;
+// //     font-size: .8rem;
+// //     padding: 1rem;
+// // }
+.filler {
+    position: relative;
+    height: 200px;
+    //background-image: linear-gradient(#84fab0, #8fd3f4);
+
+    svg {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+      }
+      
+}
+
+ .footer {
+     text-align: center;
     color: #f4f4f4;
-    background-color: #181d22;
+   background-color: #181d22;
     font-size: .8rem;
     padding: 1rem;
-}
+ }

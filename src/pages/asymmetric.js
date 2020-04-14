@@ -71,7 +71,7 @@ const Chap = props => (
             <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>
             </p>
 
-<Link to="/ciphermodes">Previous: Cipher Modes </Link> <Link style={{ float: `right`}} to="/stretching">Next: Key stretching</Link>
+<Link to="/ciphermodes" className={Styles.main} >Previous: Cipher Modes </Link> <Link style={{ float: `right`}} to="/stretching">Next: Key stretching</Link>
     </Layout>
 )
 export default Chap

@@ -14,3 +14,17 @@
 .bold {
     font-weight: bold;
 }
+
+a {
+    color: #6246ea;
+    color: #e94e1b;
+    color: #1eaedb;
+    text-shadow: none;
+    text-decoration: none;
+    background-image: none;
+}
+
+a:hover {
+    color: #f5487f;
+    font-weight: 600;
+}
