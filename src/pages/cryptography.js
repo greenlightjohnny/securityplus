@@ -40,7 +40,7 @@ const Crypt = props => (
                 <li className={Styles.isee}><Link to="/ciphermodes">Cipher Modes</Link></li>
                 <li className={Styles.isee}><Link to="/asymmetric">Asymmetric algorithms</Link></li>
                 <li className={Styles.isee}><Link to="/hashing">Hashing algorithms</Link></li>
-                <li className={Styles.isee}><Link to="/keystretching">Key stretching algorithms</Link></li>
+                <li className={Styles.isee}><Link to="/stretching">Key stretching algorithms</Link></li>
                 <li className={Styles.isee}><Link to="/obfuscation">Obfuscation</Link></li>
 
                 
@@ -97,7 +97,7 @@ export const query = graphql`
    front: file(relativePath: { eq: "6one.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -106,7 +106,7 @@ export const query = graphql`
     front2: file(relativePath: { eq: "6two.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }

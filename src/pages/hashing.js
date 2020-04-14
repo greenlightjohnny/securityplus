@@ -74,7 +74,7 @@ export const query = graphql`
    front: file(relativePath: { eq: "hash.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -83,7 +83,7 @@ export const query = graphql`
     front2: file(relativePath: { eq: "ubuntuhash.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -93,7 +93,7 @@ export const query = graphql`
     front3: file(relativePath: { eq: "61a1.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -102,7 +102,7 @@ export const query = graphql`
       front4: file(relativePath: { eq: "42mschap.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }

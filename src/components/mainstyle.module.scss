@@ -25,11 +25,46 @@
     max-width: 400px;
     min-width: 280px;
     
-    border: 1px solid black;
+    border: 2px dashed #7e92a5;
     //background-color: aqua;
     margin: 5px;
     margin: 5px 5px;
 
     border-radius: 10px;
+    a {
+        color: #6246ea;
+        text-decoration: none;
+        background-image: none;
+        text-shadow: none;
+        
+    }
 
+    a:hover {
+        color: #f5487f;
+        font-weight: 600;
+    }
+
+}
+
+.linkc {
+    color:  #6246ea;
+    text-decoration: none;
+    a {
+        color:  #6246ea;
+        text-decoration: none;
+        background-image: none;
+    }
+
+    a:hover {
+        color: #f5487f;
+        font-weight: 600;
+    }
+}
+
+.footer {
+    text-align: center;
+    color: #f4f4f4;
+    background-color: #181d22;
+    font-size: .8rem;
+    padding: 1rem;
 }
