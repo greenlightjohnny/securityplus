@@ -16,6 +16,17 @@
     }
 }
 
+.header {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1rem;
+}
+.title {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 1rem;
+}
+
 p {
     color: var(--bg)
 }
@@ -27,6 +38,7 @@ h3, h1, h4 {
 .lowmargin {
     margin-top: 0;
     //margin-bottom: 0;
+    color: #f11c59;
 }
 .topmargin {
     margin-bottom: 0;
@@ -35,6 +47,37 @@ h3, h1, h4 {
 .pandafloat {
     display: flex;
     justify-content: end;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 5px;
+    padding-right: 1rem;
+}
+
+.crossline {
+    position: relative;
+    border-bottom: 2px solid var(--crossline);
+    height: 150px;
+    
+
+}
+
+.darkbutton {
+    border-radius: 20px;
+    box-shadow: none;
+    color: yellow;
+    font-size: 1rem;
+    background-color: #181d22;
+    border: none;
+}
+
+.lightbutton {
+    border-radius: 20px;
+    box-shadow: none;
+    color: yellow;
+    font-size: 1rem;
+    background-color: #181d22;
+    border: none;
 }
 
 

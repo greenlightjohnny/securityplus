@@ -2,6 +2,7 @@
     background-color:#ffff;
     color: #333;
     transition: background-color 0.3s ease;
+    --crossline: black;
   }
 .dark-mode {
     background-color: #1a1919;
@@ -10,6 +11,8 @@
   --textNormal: #222;
   --textTitle: #222;
   --textLink: blue;
+  --crossline: #f11c59;
+
   --hr: hsla(0, 0%, 0%, 0.2);
 
  

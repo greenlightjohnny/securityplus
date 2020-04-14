@@ -1,20 +1,29 @@
-import React from "react"
+import React, { Fragment } from "react"
 import Layout from '../components/layout'
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Pandasvg from '../images/panda.svg'
+import Header from '../components/header'
 
 import { Link } from "gatsby"
 import Main from '../components/mainstyle.module.scss'
-const Panda = () => <><img className={Main.panda} style={{ height: `200px`, marginBottom: `0px`}} src={Pandasvg} /></>
+const Panda = () => <><img className={Main.panda} style={{ height: `200px`, marginBottom: `10px`}} src={Pandasvg} /></>
 const Index = props => (
-  <Layout>
-    <h1 className={Main.topmargin}>CompTIA Security+ </h1>
+  <Fragment>
+    <Header />
+    <section className={Main.title}>
+    <h1 className={Main.topmargin}>CompTIA Security<span style={{ color: `#f11c59`}}>+</span> </h1>
     <h4 className={Main.lowmargin}>Misery. Memes. Mastery.</h4>
+    </section>
+    <div className={Main.crossline}>
     <div className={Main.pandafloat}>
     <Panda />
 
     </div>
+    </div>
+   
+  <Layout>
+    
     
       <div className={Main.fademefam}>
           <div className={Main.flexc}>
@@ -55,6 +64,7 @@ const Index = props => (
 
       
   </Layout>
+  </Fragment>
 )
 export default Index
 
@@ -69,7 +79,7 @@ export const query = graphql`
       }
     }
 
-    front2: file(relativePath: { eq: "details.png" }) {
+    front2: file(relativePath: { eq: "deets.png" }) {
       childImageSharp {
        
         fluid(maxWidth: 1000) {
