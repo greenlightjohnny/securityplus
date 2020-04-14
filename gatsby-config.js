@@ -20,10 +20,23 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
+
+    {
+      resolve: "gatsby-plugin-use-dark-mode",
+      options: {
+         classNameDark: "dark-mode",
+         classNameLight: "light-mode",
+         storageKey: "darkMode",
+         minify: true,
+      },
+    },
+    
+
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
-    'gatsby-plugin-use-dark-mode',
+   
+    
   ],
 }
