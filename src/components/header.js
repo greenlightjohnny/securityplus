@@ -9,7 +9,20 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 const ListLink = props => (
     <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-        <Link to={props.to}>{props.children}</Link>
+        
+        <AniLink cover bg={`
+
+    url(${Shockedp})
+    center / cover   /* position / size */
+    no-repeat        /* repeat */
+    fixed            /* attachment */
+    padding-box      /* origin */
+    content-box      /* clip */
+    white            /* color */
+  `}  to={props.to}>
+
+{props.children}
+</AniLink>
     </li>
     
 )
@@ -22,8 +35,8 @@ const Header = ()=> {
 
         <header className={Main.header}>
 <AniLink cover bg={`
-${Shock}
-    
+
+    url(${Shockedp})
     center / cover   /* position / size */
     no-repeat        /* repeat */
     fixed            /* attachment */
