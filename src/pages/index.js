@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 import Pandasvg from '../images/panda.svg'
 import Header from '../components/header'
 import Footer from '../components/footer'
+import Move from "../components/move"
 
 import { Link } from "gatsby"
 import Main from '../components/mainstyle.module.scss'
@@ -38,23 +39,70 @@ const Index = props => (
             <h4>Section 3.0</h4>
           </div>
           <div className={Main.flexc}>
-            <h4><Link to="/identityandaccessmanagement">4.0 Identity and Access Management</Link></h4>
+            <h4><Move to="/identityandaccessmanagement">4.0 Identity and Access Management</Move></h4>
           </div>
           <div className={Main.flexc}>
             <h4>Section 5.0</h4>
           </div>
           <div className={Main.flexc}>
-          <h4><Link to="/cryptography">6.0 Cryptography and PKI</Link></h4>
+          <h4><Move to="/cryptography">6.0 Cryptography and PKI</Move></h4>
           </div>
 
       </div>
       
 
+      <div className={Main.miniflex}>
       <div>
-        <h3>CompTIA Security+ test details:</h3>
-      <Img fluid={props.data.front2.childImageSharp.fluid} />
-      <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>Fun fact, you don't know how the questions are weighted. Some questions might be worth more.</p>
+        <Img fluid={props.data.front4.childImageSharp.fluid} />
+        </div>
+
+        <div>
+          <h3>So. It has come to this.</h3>
+          <p>90 minutes and 90 questions between you and your Security+ certification. You'll learn lots, and also waste a ton of time memorizing worthless things. Just laugh along with and realize it is not logical.</p>
+        </div>
+       
+       
       </div>
+
+
+ <div className={Main.miniflex}>
+      
+        <div>
+          <h3>Irrelevant</h3>
+          <p>Lots of information on the test is not relevant to the vast majority of people forced to take it as a job requirement. There is a big difference between working around sensitive documents and configuring an 802.1x remote RADIUS authentication server for your WPA2 Enterprise WiFi.  </p>
+          <h3>Less Security</h3>
+          <p>By making the average test taker waste time memorizing protocol port numbers, the CompTIA takes away time that could be spent learning relevant concepts.</p>
+        </div>
+
+
+       <div>
+        <Img fluid={props.data.front5.childImageSharp.fluid} />
+        </div>
+
+       
+      </div>
+
+
+
+
+      <div className={Main.miniflex}>
+
+
+       <div>
+      <Img fluid={props.data.front6.childImageSharp.fluid} />
+      </div>
+
+      <div>
+        <h3>Just for fun!</h3>
+        <p>This site is just me in quarantine studying for the Security+ exam and making memes about it. I am also using this as a chance to practice my Gatsby and React skills, clearly my meme game is already top notch. Don't take this seriously, except for the meme quality.</p>
+       
+      </div>
+
+
+    
+     
+    </div>
+
 
     
       
@@ -98,6 +146,39 @@ export const query = graphql`
         }
       }
     }
+
+
+
+  front4: file(relativePath: { eq: "distractedbw2.png" }) {
+      childImageSharp {
+       
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+
+
+  front5: file(relativePath: { eq: "highprice.png" }) {
+      childImageSharp {
+       
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+
+
+  front6: file(relativePath: { eq: "studyor.png" }) {
+    childImageSharp {
+     
+      fluid(maxWidth: 1000) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
 
   
 

@@ -4,8 +4,9 @@ import Styles from "./id.module.css"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Main from '../components/mainstyle.module.scss'
-import { Link } from "gatsby"
+
 import Info from "../components/info"
+import Move from "../components/move"
 
 
 const Idman = props => (
@@ -26,29 +27,29 @@ const Idman = props => (
             <div>
             <h4>4.2 Given a scenario, install and configure identity access services</h4>
             <ul>
-                <li className={Styles.isee}> <Link to="/ldap">LDAP</Link></li>
+                <li className={Styles.isee}> <Move to="/ldap">LDAP</Move></li>
 
-                <li className={Styles.isee}><Link to="/kerberos">Kerberos</Link></li>
+                <li className={Styles.isee}><Move to="/kerberos">Kerberos</Move></li>
 
-                <li className={Styles.isee}><Link to="/tacacs">TACACS+</Link></li>
+                <li className={Styles.isee}><Move to="/tacacs">TACACS+</Move></li>
 
-                <li className={Styles.isee}><Link to="/pap">PAP </Link></li>
+                <li className={Styles.isee}><Move to="/pap">PAP </Move></li>
 
-                <li className={Styles.isee}><Link to="/chap">CHAP</Link></li>
+                <li className={Styles.isee}><Move to="/chap">CHAP</Move></li>
 
-                <li className={Styles.isee}><Link to="/mschap">MSCHAP</Link></li>
+                <li className={Styles.isee}><Move to="/mschap">MSCHAP</Move></li>
 
-                <li className={Styles.isee}><Link to="/radius">RADIUS</Link></li>
+                <li className={Styles.isee}><Move to="/radius">RADIUS</Move></li>
 
-                <li className={Styles.isee}><Link to="/saml">SAML</Link></li>
+                <li className={Styles.isee}><Move to="/saml">SAML</Move></li>
 
-                <li className={Styles.isee}><Link to="/openidconnect">OpenID Connect</Link></li>
+                <li className={Styles.isee}><Move to="/openidconnect">OpenID Connect</Move></li>
 
-                <li className={Styles.isee}><Link to="/oauth">OAuth</Link></li>
+                <li className={Styles.isee}><Move to="/oauth">OAuth</Move></li>
 
-                <li className={Styles.isee}><Link to="/shibboleth">Shibboleth</Link></li>
-                <li className={Styles.isee}><Link to="/securetoken">Secure Token</Link></li>
-                <li className={Styles.isee}><Link to="/ntlm">NTLM</Link></li>
+                <li className={Styles.isee}><Move to="/shibboleth">Shibboleth</Move></li>
+                <li className={Styles.isee}><Move to="/securetoken">Secure Token</Move></li>
+                <li className={Styles.isee}><Move to="/ntlm">NTLM</Move></li>
             </ul>
             </div>
           </div>
@@ -56,7 +57,7 @@ const Idman = props => (
             <h4>4.3 given a scenario, implement identity and access management controls</h4>
           </div>
           <div className={Main.flexc}>
-            <h4><Link to="/identityandaccessmanagement">4.0 Identity and Access Management</Link></h4>
+            <h4><Move to="/identityandaccessmanagement">4.0 Identity and Access Management</Move></h4>
           </div>
           <div className={Main.flexc}>
             <h4>Section 5.0</h4>

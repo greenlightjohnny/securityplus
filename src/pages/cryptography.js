@@ -5,8 +5,8 @@ import Styles from "./id.module.css"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Main from '../components/mainstyle.module.scss'
-import { Link } from "gatsby"
 
+import Move from '../components/move'
 const Crypt = props => (
     
     <Layout>
@@ -22,12 +22,12 @@ const Crypt = props => (
           <div>
             <h4>6.1 Explain cryptography algorithms and their basic characteristics</h4>
             <ul>
-                <li className={Styles.isee}> <Link to="/6group1">Symmetric algorithms</Link></li>
+                <li className={Styles.isee}> <Move to="/6group1">Symmetric algorithms</Move></li>
 
-                <li className={Styles.isee}><Link to="/6group1">Asymmetric algorithms</Link></li>
+                <li className={Styles.isee}><Move to="/6group1">Asymmetric algorithms</Move></li>
 
-                <li className={Styles.isee}><Link to="/6group1">Hashing</Link></li>
-                <li className={Styles.isee}><Link to="/6group1">Salt, IV, nonce</Link></li>
+                <li className={Styles.isee}><Move to="/6group1">Hashing</Move></li>
+                <li className={Styles.isee}><Move to="/6group1">Salt, IV, nonce</Move></li>
                 
             </ul>
             </div>
@@ -37,13 +37,13 @@ const Crypt = props => (
             <div>
             <h4>6.2 Explain cryptography algorithms and their basic characteristics</h4>
             <ul>
-                <li className={Styles.isee}> <Link to="/symmetric">Symmetric algorithms</Link></li>
+                <li className={Styles.isee}> <Move to="/symmetric">Symmetric algorithms</Move></li>
 
-                <li className={Styles.isee}><Link to="/ciphermodes">Cipher Modes</Link></li>
-                <li className={Styles.isee}><Link to="/asymmetric">Asymmetric algorithms</Link></li>
-                <li className={Styles.isee}><Link to="/hashing">Hashing algorithms</Link></li>
-                <li className={Styles.isee}><Link to="/stretching">Key stretching algorithms</Link></li>
-                <li className={Styles.isee}><Link to="/obfuscation">Obfuscation</Link></li>
+                <li className={Styles.isee}><Move to="/ciphermodes">Cipher Modes</Move></li>
+                <li className={Styles.isee}><Move to="/asymmetric">Asymmetric algorithms</Move></li>
+                <li className={Styles.isee}><Move to="/hashing">Hashing algorithms</Move></li>
+                <li className={Styles.isee}><Move to="/stretching">Key stretching algorithms</Move></li>
+                <li className={Styles.isee}><Move to="/obfuscation">Obfuscation</Move></li>
 
                 
             </ul>
@@ -53,17 +53,17 @@ const Crypt = props => (
               <div>
             <h4>6.3 Given a scenario, install and configure wireless security settings</h4>
             <ul>
-                <li className={Styles.isee}> <Link to="/cryptoprotocols">Cryptographic Protocols</Link></li>
+                <li className={Styles.isee}> <Move to="/cryptoprotocols">Cryptographic Protocols</Move></li>
 
                 <li className={Styles.isee}><h4>Authentication Protocols:</h4></li>
 
-                <li className={Styles.isee}><Link to="/eap">EAP</Link></li>
+                <li className={Styles.isee}><Move to="/eap">EAP</Move></li>
 
-                <li className={Styles.isee}><Link to="/802">802.1x </Link></li>
+                <li className={Styles.isee}><Move to="/802">802.1x </Move></li>
 
-                <li className={Styles.isee}><Link to="/radiusfederation">Radius Federation</Link></li>
+                <li className={Styles.isee}><Move to="/radiusfederation">Radius Federation</Move></li>
 
-                <li className={Styles.isee}><Link to="/wirelessmethods">Methods</Link></li>
+                <li className={Styles.isee}><Move to="/wirelessmethods">Methods</Move></li>
                 
 
                 
