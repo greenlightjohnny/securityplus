@@ -6,7 +6,7 @@ import Main from './mainstyle.module.scss'
 const Footer = () => {
 
     return (
-        <div>
+        <div className={Main.footersticky}>
 
     <div className={Main.filler}>
     
@@ -17,7 +17,9 @@ const Footer = () => {
   </div>
   
   <footer className={Main.footer}>No pop ups. No cookies. No ads. <br></br>We don't do those.<br></br>
-    Meme quality not guaranteed. </footer> 
+    Meme quality not guaranteed.<br></br> 
+    No copyright (we're the infringers).
+    </footer> 
   </div>
     )
 

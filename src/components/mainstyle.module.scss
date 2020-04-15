@@ -137,6 +137,17 @@ h3, h1, h4 {
 // //     font-size: .8rem;
 // //     padding: 1rem;
 // // }
+
+.footersticky {
+     
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-end;
+    
+     
+ }
+
 .filler {
     position: relative;
     height: 200px;
@@ -157,4 +168,13 @@ h3, h1, h4 {
    background-color: #181d22;
     font-size: .8rem;
     padding: 1rem;
+    
+ }
+
+ 
+
+
+
+ #gatsby {
+     min-height: 100%;
  }

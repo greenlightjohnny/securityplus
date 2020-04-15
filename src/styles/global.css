@@ -1,3 +1,26 @@
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+
+html, body, #___gatsby, #gatsby-focus-wrapper {
+  height: 100%;
+}
+#gatsby-focus-wrapper {
+  min-height: 100%;
+ 
+}
+
+
+body {
+  margin: 0px;
+}
+
+div[role="group"][tabindex] {
+  height: 100%;
+}
+
 .light-mode {
     background-color:#ffff;
     color: #333;
