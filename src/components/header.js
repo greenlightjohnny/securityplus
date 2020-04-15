@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "gatsby"
 import Main from './mainstyle.module.scss'
 import useDarkMode from 'use-dark-mode';
+import Shockedp from "../images/high.jpg"
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 
 
@@ -15,11 +17,25 @@ const ListLink = props => (
 
 const Header = ()=> {
     const darkMode = useDarkMode(false);
-
+    const Shock = () => <><img src={Shockedp} /></>
     return (
 
         <header className={Main.header}>
-            <Link to="/" style={{ textShadow: `none`, backgroundImage: `none`, }}><h3 style={{ display: `inline`, color: `#6246ea`}}>GRIND</h3></Link>
+<AniLink cover bg={`
+${Shock}
+    
+    center / cover   /* position / size */
+    no-repeat        /* repeat */
+    fixed            /* attachment */
+    padding-box      /* origin */
+    content-box      /* clip */
+    white            /* color */
+  `}  to="/">
+<h3 style={{ display: `inline`, color: `#6246ea`}}>GRIND</h3>
+</AniLink>
+
+
+            {/* <Link to="/" style={{ textShadow: `none`, backgroundImage: `none`, }}><h3 style={{ display: `inline`, color: `#6246ea`}}>GRIND</h3></Link> */}
 
             <ul style={{ listStyle: `none`, float: `right`, color: `#6246ea` }} className={Main.linkc}>
                 <ListLink to="/" style={{  color: `#6246ea` }} >Home</ListLink>

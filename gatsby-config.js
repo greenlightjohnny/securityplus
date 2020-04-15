@@ -30,12 +30,15 @@ module.exports = {
          minify: true,
       },
     },
+
+    
     
 
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-transition-link`,
    
     
   ],
