@@ -1,7 +1,7 @@
 import React from "react"
-
+import Info from "../components/info"
 import Layout from "../components/layout"
-import Styles from "./id.module.css"
+
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
@@ -9,7 +9,8 @@ import { Link } from "gatsby"
 
 const Chap = props => (
     <Layout>
-        <h1>Symmetric encryption algorithms</h1>
+      <Info title="Symmetric Encryption Algorithms" description="Blowfish has the best name, but AES gets all the love and fame. DES and RC4 are totally out, and you will be made fun of for using them." />
+        <h1>Symmetric Encryption Algorithms</h1>
         <i>"Symmetric-key algorithms[a] are algorithms for cryptography that use the same cryptographic keys for both encryption of plaintext and decryption of ciphertext. The keys may be identical or there may be a simple transformation to go between the two keys.[1] The keys, in practice, represent a shared secret between two or more parties that can be used to maintain a private information link.[2] This requirement that both parties have access to the secret key is one of the main drawbacks of symmetric key encryption, in comparison to public-key encryption (also known as asymmetric key encryption).[3][4] " <br></br> -<a href="https://en.wikipedia.org/wiki/Symmetric-key_algorithm">Wikipedia</a> </i>
         <Img  fluid={props.data.front.childImageSharp.fluid} />
             <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>As you can tell, symmetric encryption uses the same key to encrypt and decrypt.

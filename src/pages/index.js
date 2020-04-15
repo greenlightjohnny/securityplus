@@ -1,18 +1,17 @@
 import React, { Fragment } from "react"
-import Layout from '../components/layout'
+import Info from "../components/info"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Pandasvg from '../images/panda.svg'
 import Header from '../components/header'
 import Footer from '../components/footer'
-import Head from "../components/head"
 
 import { Link } from "gatsby"
 import Main from '../components/mainstyle.module.scss'
 const Panda = () => <><img className={Main.panda} style={{ height: `200px`, marginBottom: `10px`}} src={Pandasvg} /></>
 const Index = props => (
   <Fragment>
-    <Head/>
+    <Info title="Shocked Security Koala" />
     <Header />
     <section className={Main.title}>
     <h1 className={Main.topmargin}>CompTIA Security<span style={{ color: `#f11c59`}}>+</span> </h1>

@@ -1,13 +1,14 @@
 import React from "react"
-
+import Info from "../components/info"
 import Layout from "../components/layout"
-import Styles from "./id.module.css"
+
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 
 const Ntlm = props => (
     <Layout>
+      <Info title="NTLM: New Technology LAN Manager" description="Microsoft put LAN, another acronym, inside acronym NTLM. Those absolute madmen, they must be stopped! Seriously, there aught to be laws." />
         <h1>NTLM: New Technology LAN Manager</h1>
         <p style={{ fontStyle: `italic`}}>"In a Windows network, NT (New Technology) LAN Manager (NTLM) is a suite of Microsoft security protocols intended to provide authentication, integrity, and confidentiality to users."" -<a href="https://en.wikipedia.org/wiki/NT_LAN_Manager">Wikipedia</a> </p>
         <Img fluid={props.data.front.childImageSharp.fluid} />
@@ -67,7 +68,7 @@ export const query = graphql`
    front: file(relativePath: { eq: "NTLM.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -76,7 +77,7 @@ export const query = graphql`
     front2: file(relativePath: { eq: "ntlm2.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -86,7 +87,7 @@ export const query = graphql`
     front3: file(relativePath: { eq: "ntlm3.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -95,7 +96,7 @@ export const query = graphql`
       front4: file(relativePath: { eq: "42NTLM.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }

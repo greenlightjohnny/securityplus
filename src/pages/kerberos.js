@@ -1,13 +1,14 @@
 import React from "react"
-
+import Info from "../components/info"
 import Layout from "../components/layout"
-import Styles from "./id.module.css"
+
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 
 const Kerberos = props => (
     <Layout>
+      <Info title="Kerberos" description="Kerberos is the undefeated local network authentication and SSO protocol. It kicks the pants off everything else in this arena." />
         <h1>Kerberos: Badass network authentication over an un-secure network</h1>
         <p>Boy oh boy have the folks in the backroom at MIT cooked up an amazing network authentication protocol! And they were even kind enough not to give it a stupid acronym for a name, thanks fam. It's named after a three headed guard dog from Greek mythology. Just how awesome is Kerberos? Well Microsoft now recommends using Kerberos over their own NTLM (New Technology LAN Manager) proprietary network authentication protocol. You know something is on fire when Microsoft dumps their own software in favor of an open source program, because Microsoft just hates giving up control.</p>
         <div>
@@ -90,7 +91,7 @@ export const query = graphql`
    front: file(relativePath: { eq: "kerbros.jpeg" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -99,7 +100,7 @@ export const query = graphql`
     front2: file(relativePath: { eq: "ksign5.jpeg" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -108,7 +109,7 @@ export const query = graphql`
     front3: file(relativePath: { eq: "follow.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -118,7 +119,7 @@ export const query = graphql`
  front4: file(relativePath: { eq: "42ker.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }

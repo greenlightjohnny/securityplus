@@ -1,14 +1,15 @@
 import React, { Fragment } from "react"
-import Header from "../components/header"
+
 import Layout from "../components/layout"
-import Styles from "./id.module.css"
+
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
+import Info from "../components/info"
 
 const Chap = props => (
   <React.Fragment>
-   
+   <Info title="Crypotography Intro"  description="We give a fast overview of asymmetric and symmetric cryptography and uses. Key exchanges and algorithm names." />
     <Layout>
     <h1>Multiple concepts, cryptography introduction</h1>
     <p>

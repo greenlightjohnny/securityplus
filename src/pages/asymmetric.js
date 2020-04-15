@@ -1,5 +1,5 @@
 import React from "react"
-import Header from "../components/header"
+import Info from "../components/info"
 import Layout from "../components/layout"
 import Styles from "./id.module.css"
 import { graphql } from "gatsby"
@@ -8,9 +8,10 @@ import { Link } from "gatsby"
 
 
 const Chap = props => (
-    <>
-    < Header />
+    
+    
     <Layout>
+      <Info title="Asymmetric Algorithms" description="Here we talk about asymmetric encryption and why it can be used for awesome things like exchanging keys and authentication. Digital signatures are also covered for a little bit" />
         <h1>Asymmetric encryption algorithms </h1>
         <i>"Public-key cryptography, or asymmetric cryptography, is a cryptographic system that uses pairs of keys: public keys, which may be disseminated widely, and private keys,which are known only to the owner. The generation of such keys depends on cryptographic algorithms based on mathematical problems to produce one-way functions. Effective security only requires keeping the private key private; the public key can be openly distributed without compromising security. " <br></br> -<a href="https://en.wikipedia.org/wiki/Public-key_cryptography">Wikipedia</a> </i>
 
@@ -75,7 +76,7 @@ const Chap = props => (
 
 <Link to="/ciphermodes" className={Styles.main} >Previous: Cipher Modes </Link> <Link style={{ float: `right`}} to="/stretching">Next: Key stretching</Link>
     </Layout>
-    </>
+    
 )
 export default Chap
 
@@ -103,7 +104,7 @@ export const query = graphql`
     front3: file(relativePath: { eq: "mschap3.jpeg" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -112,7 +113,7 @@ export const query = graphql`
       front4: file(relativePath: { eq: "62raa.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }

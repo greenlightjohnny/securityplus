@@ -1,13 +1,14 @@
 import React from "react"
-
+import Info from "../components/info"
 import Layout from "../components/layout"
-import Styles from "./id.module.css"
+
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 
 const Pap = props => (
     <Layout>
+      <Info title="PAP: Password Authentication  Protocol" description="A super old authentication method, PAP is still around as a backup. Please don't use it without protection" />
         <h1>PAP: Password Authentication Protocol</h1>
         <i>"Password Authentication Protocol (PAP) is a password-based authentication protocol used by Point to Point Protocol (PPP) to validate users. Almost all network operating system remote servers support PAP. PAP is specified in RFC 1334." <br></br> -<a href="https://en.wikipedia.org/wiki/Password_Authentication_Protocol">Wikipedia</a> </i>
 
@@ -39,7 +40,7 @@ export const query = graphql`
    front: file(relativePath: { eq: "papdanger.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 200) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -48,7 +49,7 @@ export const query = graphql`
     front2: file(relativePath: { eq: "papwhy.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -58,7 +59,7 @@ export const query = graphql`
     front3: file(relativePath: { eq: "42pap.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -67,7 +68,7 @@ export const query = graphql`
       front4: file(relativePath: { eq: "42oauth.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }

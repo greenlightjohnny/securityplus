@@ -1,5 +1,5 @@
 import React from "react"
-
+import Info from "../components/info"
 import Layout from "../components/layout"
 import Styles from "./id.module.css"
 import { graphql } from "gatsby"
@@ -9,6 +9,7 @@ import { Link } from "gatsby"
 
 const Saml = props => (
     <Layout>
+      <Info title="SAML: Security Assertion Markup Language" description="Yet another authentication protocol, this one mostly for SSO. It is older and slower, mostly used in corporate environments" />
         <h1>SAML:  Security Assertion Markup Language</h1>
         <p>SAML is standard mostly used for SSO on the web, allowing you to use one set of credentials (username and password) to log onto other services/websites. SAML works by exchanging authentication and authorization between three parties known as the identity provider (idP), service provider (SP), and the principal (you/client/device). <br></br>
         SAML is an older XML (Extensible Markup Language) based SSO service, and is considered a "heavy" language, meaning it does not perform well on mobile devices. As a result, OpenID Connect is largely used for consumer level generic web and mobile SSO (think signing into a different site with your Facebook account), while SAML is holding down the custom enterprise/corporate level web based SSO side of the game.
@@ -79,7 +80,7 @@ export const query = graphql`
    front: file(relativePath: { eq: "saml.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -88,7 +89,7 @@ export const query = graphql`
     front2: file(relativePath: { eq: "saml3.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -98,7 +99,7 @@ export const query = graphql`
     front3: file(relativePath: { eq: "42sam.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }

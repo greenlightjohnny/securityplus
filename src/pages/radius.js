@@ -1,7 +1,7 @@
 import React from "react"
-
+import Info from "../components/info"
 import Layout from "../components/layout"
-import Styles from "./id.module.css"
+
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
@@ -9,6 +9,7 @@ import { Link } from "gatsby"
 
 const Radius = props => (
     <Layout>
+      <Info title="RADIUS: Remote Authentication Dail-In User Service" description="An older networking protocol, RADIUS is still kicking and the reason why the 802.1x standard is so complicated. Seen as the backend lots on WPA and WPA2 in Enterprise mode" />
         <h1>RADIUS: Remote Authentication Dial-In User Service</h1>
         <i>"Remote Authentication Dial-In User Service (RADIUS) is a networking protocol, operating on port 1812, that provides centralized Authentication, Authorization, and Accounting (AAA or Triple A) management for users who connect and use a network service." <br></br> -<a href="https://en.wikipedia.org/wiki/RADIUS">Wikipedia</a> </i>
         <p>RADIUS is a TCP/IP suite application layer networking protocol, which provides AAA. It is generally used to take input from a log on screen where you are asked to enter your username and password, and transmits that input to the remote RADIUS server for verification. You have probably used RADIUS before without knowing it. WPA2-Enterprise mode usually uses RADIUS as the back end, this is often seen at hotels or corporate settings where they want to be able to track your network usage. </p>
@@ -62,7 +63,7 @@ export const query = graphql`
    front: file(relativePath: { eq: "radius.jpeg" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -71,7 +72,7 @@ export const query = graphql`
     front2: file(relativePath: { eq: "why2.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -80,7 +81,7 @@ export const query = graphql`
     front3: file(relativePath: { eq: "42rad.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -90,7 +91,7 @@ export const query = graphql`
  front4: file(relativePath: { eq: "rad3.jpeg" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }

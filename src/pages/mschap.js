@@ -1,7 +1,7 @@
 import React from "react"
-
+import Info from "../components/info"
 import Layout from "../components/layout"
-import Styles from "./id.module.css"
+
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
@@ -9,6 +9,7 @@ import { Link } from "gatsby"
 
 const Chap = props => (
     <Layout>
+      <Info title="MS-CHAP: Microsoft Challenge Handshake Protocol" description="Microsoft improved on CHAP with MSCHAP. Not surprisingly, however, they still managed to fudge it up and MSCHAP is not considered very secure by itself. Still in use today, just buried under secure layers with other protocls." />
         <h1>MS-CHAP: Microsoft CHAP </h1>
         <i>"MS-CHAP is the Microsoft version of the Challenge-Handshake Authentication Protocol, CHAP. The protocol exists in two versions, MS-CHAPv1 (defined in RFC 2433) and MS-CHAPv2 (defined in RFC 2759" <br></br> -<a href="https://en.wikipedia.org/wiki/MS-CHAP">Wikipedia</a> </i>
 
@@ -64,7 +65,7 @@ export const query = graphql`
    front: file(relativePath: { eq: "papdanger.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 200) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -73,7 +74,7 @@ export const query = graphql`
     front2: file(relativePath: { eq: "mschapwi.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -83,7 +84,7 @@ export const query = graphql`
     front3: file(relativePath: { eq: "mschap3.jpeg" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -92,7 +93,7 @@ export const query = graphql`
       front4: file(relativePath: { eq: "42mschap.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }

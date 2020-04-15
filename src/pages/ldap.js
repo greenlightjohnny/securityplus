@@ -1,13 +1,14 @@
 import React from "react"
-
+import Info from "../components/info"
 import Layout from "../components/layout"
-import Styles from "./id.module.css"
+
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 
 const Ldap = props => (
     <Layout>
+      <Info title="LDAP: Lightweight Directory Access Protocol" description="Here we learn about the incredibly common LDAP and how it is used to query databases for fun and profit." />
         <h1>LDAP: Lightweight Directory Access Protocol</h1>
         <i>"LDAP, the Lightweight Directory Access Protocol, is a mature, flexible, and well supported standards-based mechanism for interacting with directory servers. It’s often used for authentication and storing information about users, groups, and applications, but an LDAP directory server is a fairly general-purpose data store and can be used in a wide variety of applications." -Neil Wilson https://ldap.com/ </i>
         <div>
@@ -64,7 +65,7 @@ export const query = graphql`
    front: file(relativePath: { eq: "ldap2.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -73,7 +74,7 @@ export const query = graphql`
     front2: file(relativePath: { eq: "ldap3.jpeg" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -82,7 +83,7 @@ export const query = graphql`
     front3: file(relativePath: { eq: "ldapconfig.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -92,7 +93,7 @@ export const query = graphql`
  front4: file(relativePath: { eq: "ipapp.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -101,7 +102,7 @@ export const query = graphql`
       front5: file(relativePath: { eq: "42ldap.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }

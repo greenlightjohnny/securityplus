@@ -5,11 +5,13 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Main from '../components/mainstyle.module.scss'
 import { Link } from "gatsby"
+import Info from "../components/info"
 
-import Header from "../components/header"
+
 const Idman = props => (
     
     <Layout>
+      <Info title="Identity and Access Management" description="Woo wheee a lot of fancy words! This is section 4.0, not much else to say. Learn it all!" />
         <h1>4.0 Identity and Access Management</h1>
 
         <div>
@@ -28,7 +30,7 @@ const Idman = props => (
 
                 <li className={Styles.isee}><Link to="/kerberos">Kerberos</Link></li>
 
-                <li className={Styles.isee}><Link to="/">TACACS+</Link></li>
+                <li className={Styles.isee}><Link to="/tacacs">TACACS+</Link></li>
 
                 <li className={Styles.isee}><Link to="/pap">PAP </Link></li>
 
@@ -85,7 +87,7 @@ export const query = graphql`
    front: file(relativePath: { eq: "identity.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -94,7 +96,7 @@ export const query = graphql`
     front2: file(relativePath: { eq: "details.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }

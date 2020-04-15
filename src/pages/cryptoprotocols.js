@@ -1,7 +1,7 @@
 import React from "react"
-
+import Info from "../components/info"
 import Layout from "../components/layout"
-import Styles from "./id.module.css"
+
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
@@ -9,7 +9,8 @@ import { Link } from "gatsby"
 
 const Chap = props => (
     <Layout>
-        <h1>Cryptographic protocols </h1>
+      <Info title="Cryptographic Protocols" description="An overview of the CompTIA Security+ 6.3 section on WPA, PSK, Enterprise, TKIP, CCMP." />
+        <h1>Cryptographic Protocols </h1>
         <p>Here we will be covering some of the cryptography used with WiFi, in particular with WPA and WPA2 (Wi-Fi Protected Access).</p>
 
         <h3>WPA: Wi-Fi Protected Access</h3>
@@ -57,7 +58,7 @@ export const query = graphql`
    front: file(relativePath: { eq: "wepmeme2.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -66,7 +67,7 @@ export const query = graphql`
     front2: file(relativePath: { eq: "wepmeme3.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -76,7 +77,7 @@ export const query = graphql`
     front3: file(relativePath: { eq: "options.jpeg" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -85,7 +86,7 @@ export const query = graphql`
       front4: file(relativePath: { eq: "wifi4.jpeg" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -94,7 +95,7 @@ export const query = graphql`
       front5: file(relativePath: { eq: "63a8.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }

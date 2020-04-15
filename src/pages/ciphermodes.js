@@ -1,7 +1,7 @@
 import React from "react"
-
+import Info from "../components/info"
 import Layout from "../components/layout"
-import Styles from "./id.module.css"
+
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
@@ -9,6 +9,7 @@ import { Link } from "gatsby"
 
 const Modes = props => (
     <Layout>
+      <Info title="Cipher Modes" description="So many cipher modes to pick from! Just don't pick ECB like Zoom did. ECB is a weak cipher mode, and it was an epic mistake." />
         <h1>Cipher modes</h1>
         <i>"In cryptography, a block cipher mode of operation is an algorithm that uses a block cipher to provide information security such as confidentiality or authenticity. A block cipher by itself is only suitable for the secure cryptographic transformation (encryption or decryption) of one fixed-length group of bits called a block.[2] A mode of operation describes how to repeatedly apply a cipher's single-block operation to securely transform amounts of data larger than a block." <br></br> -<a href="https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation">Wikipedia</a> </i>
        

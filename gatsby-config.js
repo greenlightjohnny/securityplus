@@ -43,12 +43,12 @@ module.exports = {
 
 
   siteMetadata: {
-    title: "Severus Snape",
-    titleTemplate: "%s · The Real Hero",
+    title: "Shocked Koala",
+    titleTemplate: "%s | CompTIA Memes",
     description:
-      "Hogwarts Potions master, Head of Slytherin house and former Death Eater.",
-    url: "https://www.doe.com", // No trailing slash allowed!
-    image: "/images/snape.jpg", // Path to your image you placed in the 'static' folder
-    twitterUsername: "@occlumency",
+      "This is a site about the CompTIA and the Security+ exam. Basically, it's a terrible exam to study for. The solution? Memes. It's so obvious.",
+    url: "https://www.fredjones.dev", // No trailing slash allowed!
+    image: "./static/favicon.ico", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@03001200101101100434",
   },
 }

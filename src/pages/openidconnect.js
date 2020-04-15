@@ -1,13 +1,14 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Styles from "./id.module.css"
+import Info from "../components/info"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 
 const Openidconnect = props => (
     <Layout>
+      <Info title="OpenID Connect" description="A bunch of big tech companies discovered fun and exciting new ways to track you. It is okay though because they are American companies, otherwise it would be considered bad." />
         <h1>OpenID Connect</h1>
         <p>OpenID Connect is a SSO, and is extremely common to see online. It can be used for both identity (authentication) and access (authorization). OpenID Connect was build on top of OAuth, which we will learn about as well. OAuth provided access (authorization) only. OpenID Connect added on authentication. </p>
 
@@ -58,7 +59,7 @@ export const query = graphql`
    front: file(relativePath: { eq: "openid2.jpeg" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -67,7 +68,7 @@ export const query = graphql`
     front2: file(relativePath: { eq: "etsy.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -77,7 +78,7 @@ export const query = graphql`
     front3: file(relativePath: { eq: "surprise.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -86,7 +87,7 @@ export const query = graphql`
       front4: file(relativePath: { eq: "42opn.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }

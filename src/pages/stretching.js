@@ -1,7 +1,7 @@
 import React from "react"
-import Header from "../components/header"
+import Info from "../components/info"
 import Layout from "../components/layout"
-import Styles from "./id.module.css"
+
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
@@ -9,6 +9,7 @@ import { Link } from "gatsby"
 
 const Chap = props => (
     <Layout>
+      <Info title="Key Stretching Algorithms" description="A tactic to slow attackers down by salting and hashing your password a massive amount of times in a row. Slows down brute force attacks fight off the terrible rainbow table attacks. bcrypt and PBFKD2 are the ones you need to learn for the CompTIA test." />
         <h1>Key Stretching Algorithms </h1>
         <i>"In cryptography, key stretching techniques are used to make a possibly weak key, typically a password or passphrase, more secure against a brute-force attack by increasing the resources (time and possibly space) it takes to test each possible key. Passwords or passphrases created by humans are often short or predictable enough to allow password cracking, and key stretching is intended to make such attacks more difficult by complicating a basic step of trying a single password candidate. " <br></br> -<a href="https://en.wikipedia.org/wiki/Key_stretching">Wikipedia</a> </i>
 
@@ -54,7 +55,7 @@ export const query = graphql`
     front2: file(relativePath: { eq: "mschapwi.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -64,7 +65,7 @@ export const query = graphql`
     front3: file(relativePath: { eq: "mschap3.jpeg" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }

@@ -1,7 +1,7 @@
 import React from "react"
-
+import Info from "../components/info"
 import Layout from "../components/layout"
-import Styles from "./id.module.css"
+
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
@@ -9,6 +9,7 @@ import { Link } from "gatsby"
 
 const Secure = props => (
     <Layout>
+      <Info title="Secure Token" description="What the fudge is a secure token? Why is it on a list of authentication protocols. The CompTIA making life difficult yet again" />
         <h1>Secure Token  </h1>
         
         <h3>What the fudge is this?</h3>
@@ -28,7 +29,7 @@ export const query = graphql`
    front: file(relativePath: { eq: "papdanger.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 200) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -37,7 +38,7 @@ export const query = graphql`
     front2: file(relativePath: { eq: "mschapwi.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -47,7 +48,7 @@ export const query = graphql`
     front3: file(relativePath: { eq: "mschap3.jpeg" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -56,7 +57,7 @@ export const query = graphql`
       front4: file(relativePath: { eq: "42mschap.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }

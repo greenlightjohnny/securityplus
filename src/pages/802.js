@@ -1,7 +1,7 @@
 import React from "react"
-import Header from "../components/header"
+
 import Layout from "../components/layout"
-import Styles from "./id.module.css"
+import Info from "../components/info"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
@@ -9,13 +9,13 @@ import { Link } from "gatsby"
 
 const Chap = props => (
   <>
-  <Header/>
-    <Layout>
 
+    <Layout>
+    <Info title="802.1x"  description="Brief introduction to the 802.1x standard, why it sucks, and the reason it was developed knowing it was not the hottest idea. Spoiler alert, hardware manufactures screwed us all over." />
         <h1>IEEE 802.1x </h1>
         <i>"IEEE 802.1X is an IEEE Standard for port-based Network Access Control (PNAC). It is part of the IEEE 802.1 group of networking protocols. It provides an authentication mechanism to devices wishing to attach to a LAN or WLAN. " <br></br> -<a href="https://en.wikipedia.org/wiki/IEEE_802.1X">Wikipedia</a> </i>
         <Img  fluid={props.data.front4.childImageSharp.fluid} />
-            <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>Well this is already off to a good start! Jesse Walker is one of the people who wrote the 802.1x standard for the IEEE. Obviously he was not exactly pleased with what they were forced to do. 
+            <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>Well this is already off to a good start! Jesse Walker is one of the people who wrote the 802.1x standard for the IEEE. Obviously he was not exactly pleased with what they were forced to do. Jesse is an absolute hero of the people for letting us all know. Can you imagine thinking 802.1x was the best way of doing things??? It's freaking complicated. At least we can take comfort in the fact that we know this.
             </p>
             
         <h3>Where to start?</h3>

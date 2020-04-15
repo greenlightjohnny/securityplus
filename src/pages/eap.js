@@ -1,7 +1,7 @@
 import React from "react"
-
+import Info from "../components/info"
 import Layout from "../components/layout"
-import Styles from "./id.module.css"
+
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
@@ -9,6 +9,7 @@ import { Link } from "gatsby"
 
 const Chap = props => (
     <Layout>
+      <Info title="EAP: Extensible Authentication Protocol" description="All about EAP and its crazy history. We cover EAP methods, and what the CompTIA want you to know for the Security 501 exam. 802.1x is touched on" />
         <h1>EAP: Extensible Authentication Protocol </h1>
         <i>"Extensible Authentication Protocol (EAP) is an authentication framework frequently used in network and internet connections. It is defined in RFC 3748" <br></br> -<a href="https://en.wikipedia.org/wiki/Extensible_Authentication_Protocol">Wikipedia</a> </i>
         <p>EAP comes from the Internet Engineering Task Force (IETF) which is an open standards organization of volunteers that create internet standards, such as TCP/IP suite. EAP is a framework only, EAP supports many different types of authentication. Extensible literally means "capable of being extended", so EAP is not locked down to using a specific authentication method. This is awesome because it allows for future flexbility. No one wants to be stuck using an authentication method that is not secure, such as being forced to use DES for the the encryption. </p>
@@ -77,7 +78,7 @@ export const query = graphql`
     front2: file(relativePath: { eq: "ex4.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -87,7 +88,7 @@ export const query = graphql`
     front3: file(relativePath: { eq: "ex13.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -96,7 +97,7 @@ export const query = graphql`
       front4: file(relativePath: { eq: "mschap3.jpeg" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -107,7 +108,7 @@ export const query = graphql`
   front5: file(relativePath: { eq: "802.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }

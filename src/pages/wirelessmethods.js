@@ -1,7 +1,7 @@
 import React from "react"
-
+import Info from "../components/info"
 import Layout from "../components/layout"
-import Styles from "./id.module.css"
+
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
@@ -9,6 +9,7 @@ import { Link } from "gatsby"
 
 const Chap = props => (
     <Layout>
+      <Info title="PSK, Enterprise, and Open Modes" description="All about WPA and WPA2 WiFi and the ways to join a network. PSK vs Enterprise showdown time! Spoiler alert, Enterprise provides authentication and is more secure." />
         <h1>PSK, Open, Enterprise, WPS, Captive portals</h1>
         <i>"Created by the Wi-Fi Alliance and introduced in 2006, the goal of the protocol is to allow home users who know little of wireless security and may be intimidated by the available security options to set up Wi-Fi Protected Access, as well as making it easy to add new devices to an existing network without entering long passphrases." <br></br> -<a href="https://en.wikipedia.org/wiki/MS-CHAP">Wikipedia</a> </i>
         <h3>PSK, Open, Enterprise</h3>
@@ -66,7 +67,7 @@ export const query = graphql`
     front2: file(relativePath: { eq: "ex5.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -76,7 +77,7 @@ export const query = graphql`
     front3: file(relativePath: { eq: "ex4.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -85,7 +86,7 @@ export const query = graphql`
       front4: file(relativePath: { eq: "wps.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -95,7 +96,7 @@ export const query = graphql`
 front5: file(relativePath: { eq: "captive3.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -104,7 +105,7 @@ front5: file(relativePath: { eq: "captive3.png" }) {
       front6: file(relativePath: { eq: "captive.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -115,7 +116,7 @@ front5: file(relativePath: { eq: "captive3.png" }) {
       front7: file(relativePath: { eq: "63a7.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }

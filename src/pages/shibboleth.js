@@ -1,7 +1,7 @@
 import React from "react"
-
+import Info from "../components/info"
 import Layout from "../components/layout"
-import Styles from "./id.module.css"
+
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
@@ -9,6 +9,7 @@ import { Link } from "gatsby"
 
 const Shibboleth = props => (
     <Layout>
+      <Info title="Shibboleth" description="Shibboleth! Rolls right off the tongue, superb marketing. It's an SSO based off of SAML, used for authentication. Not much else to see here folks, move along." />
         <h1>Shibboleth: SSO</h1>
         <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>"Shibboleth is a single sign-on log-in system for computer networks and the Internet. It allows people to sign in using just one identity to various systems run by federations of different organizations or institutions. The federations are often universities or public service organizations." <br></br>-https://en.wikipedia.org/wiki/Shibboleth_(Shibboleth_Consortium)</p>
         
@@ -45,7 +46,7 @@ export const query = graphql`
    front: file(relativePath: { eq: "Shibboleth_logo.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -54,7 +55,7 @@ export const query = graphql`
     front2: file(relativePath: { eq: "ahha.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -64,7 +65,7 @@ export const query = graphql`
     front3: file(relativePath: { eq: "42shib.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }

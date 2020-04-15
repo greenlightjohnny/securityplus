@@ -1,5 +1,5 @@
 import React from "react"
-
+import Info from "../components/info"
 import Layout from "../components/layout"
 import Styles from "./id.module.css"
 import { graphql } from "gatsby"
@@ -9,6 +9,7 @@ import { Link } from "gatsby"
 const Idtwo = props => (
 
     <Layout>
+      <Info title="test" />
         <h1>4.2 Given a scenario, install and configure identity and access services.</h1>
         <div>
             <Img fluid={props.data.front.childImageSharp.fluid} />

@@ -1,13 +1,14 @@
 import React from "react"
-
+import Info from "../components/info"
 import Layout from "../components/layout"
-import Styles from "./id.module.css"
+
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 
 const Tacacs = props => (
     <Layout>
+      <Info title="TACACS+: Terminal Access Controller Access Control System Plus"  description="Wow, what an acronym. Someone is having a laugh. Cisco, why would you allow this to move forward??" />
         <h1>TACACS+: Terminal Access Controller Access control System Plus</h1>
         
         <div>
@@ -57,10 +58,10 @@ export default Tacacs
 
 export const query = graphql`
   query {
-   front: file(relativePath: { eq: "tacacs.jpeg" }) {
+   front: file(relativePath: { eq: "fry2.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -69,7 +70,7 @@ export const query = graphql`
     front2: file(relativePath: { eq: "tac1.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -78,7 +79,7 @@ export const query = graphql`
     front3: file(relativePath: { eq: "42tac.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -88,7 +89,7 @@ export const query = graphql`
  front4: file(relativePath: { eq: "ipapp.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }

@@ -1,7 +1,7 @@
 import React from "react"
-
+import Info from "../components/info"
 import Layout from "../components/layout"
-import Styles from "./id.module.css"
+
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
@@ -9,6 +9,7 @@ import { Link } from "gatsby"
 
 const Chap = props => (
     <Layout>
+      <Info title="CHAP" description="We give the totally insecure Challenge Authentication Protocol a fast rundown, and teach you why only and absolute MADMAN would use it. And more." />
         <h1>CHAP: Challenge-Handshake Authentication Protocol </h1>
         <i>"The Challenge-Handshake Authentication Protocol (CHAP) authenticates a user or network host to an authenticating entity. That entity may be, for example, an Internet service provider.
 
@@ -49,7 +50,7 @@ export const query = graphql`
    front: file(relativePath: { eq: "papdanger.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 200) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -58,7 +59,7 @@ export const query = graphql`
     front2: file(relativePath: { eq: "chap.jpeg" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -68,7 +69,7 @@ export const query = graphql`
     front3: file(relativePath: { eq: "chapset.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -77,7 +78,7 @@ export const query = graphql`
       front4: file(relativePath: { eq: "42mschap.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }

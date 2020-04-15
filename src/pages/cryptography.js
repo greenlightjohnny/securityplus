@@ -1,4 +1,5 @@
 import React from "react"
+import Info from "../components/info"
 import Layout from "../components/layout"
 import Styles from "./id.module.css"
 import { graphql } from "gatsby"
@@ -9,6 +10,7 @@ import { Link } from "gatsby"
 const Crypt = props => (
     
     <Layout>
+      <Info title="Cryptography and PKI" description="Landing page for the CompTIA security+ 501 6.0 section. Lots of fun stuff."/>
         <h1>6.0 Cryptography and PKI</h1>
 
         <div>
@@ -59,9 +61,9 @@ const Crypt = props => (
 
                 <li className={Styles.isee}><Link to="/802">802.1x </Link></li>
 
-                <li className={Styles.isee}><Link to="/radiusfed">Radius Federation</Link></li>
+                <li className={Styles.isee}><Link to="/radiusfederation">Radius Federation</Link></li>
 
-                <li className={Styles.isee}><Link to="/wirelessmethodes">Methods</Link></li>
+                <li className={Styles.isee}><Link to="/wirelessmethods">Methods</Link></li>
                 
 
                 

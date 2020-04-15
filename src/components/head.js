@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet'
 const Head = () => {
 
     return (
-        <Helmet title="Testing"/>
+        <Helmet title="Shocked Koala"/>
     )
 }
 

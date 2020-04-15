@@ -1,7 +1,7 @@
 import React from "react"
-
+import Info from "../components/info"
 import Layout from "../components/layout"
-import Styles from "./id.module.css"
+
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
@@ -9,6 +9,7 @@ import { Link } from "gatsby"
 
 const Chap = props => (
     <Layout>
+      <Info title="Hashes and Hashing!" description="Hashes are really a sweet way to verify data has not been altered. Probably my favorite topic. We cover the basics and the common SHA and MD5 hashing alorithms." />
         <h1>Hash functions </h1>
         <i>"A cryptographic hash function (CHF) is a hash function that is suitable for use in cryptography. It is a mathematical algorithm that maps data of arbitrary size (often called the "message") to a bit string of a fixed size (the "hash value", "hash", or "message digest") and is a one-way function, that is, a function which is practically infeasible to invert" <br></br> -<a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function">Wikipedia</a> </i>
 

@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Styles from "./id.module.css"
+import Info from "../components/info"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
@@ -9,6 +9,7 @@ import { Link } from "gatsby"
 
 const Chap = props => (
     <Layout>
+      <Info title="RADIUS Federation" description="RADIUS Federation is a vague concept the CompTIA have whipped out of thin air for the Security+ exam. There is honestly no real set in stone definition, but here we are anyway."/>
         <h1>RADIUS Federation </h1>
         <i>"Remote Authentication Dial-In User Service (RADIUS) is a networking protocol, operating on port 1812, that provides centralized Authentication, Authorization, and Accounting (AAA or Triple A) management for users who connect and use a network service." <br></br> -<a href="https://en.wikipedia.org/wiki/RADIUS">Wikipedia</a> </i>
 
@@ -49,7 +50,7 @@ export const query = graphql`
     front2: file(relativePath: { eq: "mschapwi.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -59,7 +60,7 @@ export const query = graphql`
     front3: file(relativePath: { eq: "mschap3.jpeg" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -68,7 +69,7 @@ export const query = graphql`
       front4: file(relativePath: { eq: "42mschap.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }

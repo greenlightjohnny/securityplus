@@ -1,13 +1,14 @@
 import React from "react"
-
+import Info from "../components/info"
 import Layout from "../components/layout"
-import Styles from "./id.module.css"
+
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 
 const Oauth = props => (
     <Layout>
+      <Info title="OAuth" description="OAuth is free for consumers, which means you are the product. It lets you share data between apps easily, so that your data can be sold. Always fun." />
         <h1>OAuth</h1>
         <Img style={{maxWidth: 300 }} fluid={props.data.front.childImageSharp.fluid} />
             <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>"An open protocol to allow secure authorization in a simple and standard method from web, mobile and desktop applications." <br></br> -https://oauth.net/
@@ -61,7 +62,7 @@ export const query = graphql`
    front: file(relativePath: { eq: "oauth.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 200) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -70,7 +71,7 @@ export const query = graphql`
     front2: file(relativePath: { eq: "fitbit.png" }) {
       childImageSharp {
        
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -80,7 +81,7 @@ export const query = graphql`
     front3: file(relativePath: { eq: "neo.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -89,7 +90,7 @@ export const query = graphql`
       front4: file(relativePath: { eq: "42oauth.png" }) {
         childImageSharp {
          
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
