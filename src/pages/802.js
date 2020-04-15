@@ -1,5 +1,5 @@
 import React from "react"
-
+import Header from "../components/header"
 import Layout from "../components/layout"
 import Styles from "./id.module.css"
 import { graphql } from "gatsby"
@@ -8,7 +8,10 @@ import { Link } from "gatsby"
 
 
 const Chap = props => (
+  <>
+  <Header/>
     <Layout>
+
         <h1>IEEE 802.1x </h1>
         <i>"IEEE 802.1X is an IEEE Standard for port-based Network Access Control (PNAC). It is part of the IEEE 802.1 group of networking protocols. It provides an authentication mechanism to devices wishing to attach to a LAN or WLAN. " <br></br> -<a href="https://en.wikipedia.org/wiki/IEEE_802.1X">Wikipedia</a> </i>
         <Img  fluid={props.data.front4.childImageSharp.fluid} />
@@ -90,6 +93,7 @@ const Chap = props => (
 
 <Link to="/eap">Previous: EAP</Link> <Link style={{ float: `right`}} to="/radiusfederation">Next: RADIUS Federation</Link>
     </Layout>
+    </>
 )
 export default Chap
 

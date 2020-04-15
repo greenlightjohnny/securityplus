@@ -20,8 +20,8 @@ const Layout = ({ children }) => {
     return (
 
         
-        <div>
-           
+        <>
+           <Header />
     <div style={{ margin: `0 auto`, maxWidth: 800, padding: `1rem 1rem`, }}>
         {/* <header style={{ marginBottom: `1.5rem`}}>
             <Link to="/" style={{ textShadow: `none`, backgroundImage: `none`, }}><h3 style={{ display: `inline`, color: `#6246ea`}}>GRIND</h3></Link>
@@ -62,7 +62,7 @@ const Layout = ({ children }) => {
   
   <footer className={Main.footer}>No pop ups. No cookies. No ads. <br></br>We don't do those.<br></br>
     Meme quality not guaranteed. </footer>  */}
-  </div>
+  </>
 
     )
   

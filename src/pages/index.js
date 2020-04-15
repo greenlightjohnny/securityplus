@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Pandasvg from '../images/panda.svg'
 import Header from '../components/header'
+import Footer from '../components/footer'
 
 import { Link } from "gatsby"
 import Main from '../components/mainstyle.module.scss'
@@ -22,8 +23,8 @@ const Index = props => (
     </div>
     </div>
    
-  <Layout>
-    
+
+    <div className={Main.container}>
     
       <div className={Main.fademefam}>
           <div className={Main.flexc}>
@@ -62,8 +63,8 @@ const Index = props => (
       <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>These can be learned in any order. In fact, they are all kind of intertwined so you will be anyway. This site starts with section 4.0</p>
       </div>
 
-      
-  </Layout>
+      </div>
+    <Footer />
   </Fragment>
 )
 export default Index

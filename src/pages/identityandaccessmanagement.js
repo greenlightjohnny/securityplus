@@ -6,6 +6,7 @@ import Img from "gatsby-image"
 import Main from '../components/mainstyle.module.scss'
 import { Link } from "gatsby"
 
+import Header from "../components/header"
 const Idman = props => (
     
     <Layout>
