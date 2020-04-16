@@ -57,8 +57,8 @@ const Index = props => (
         </div>
 
         <div>
-          <h3>So. It has come to this.</h3>
-          <p>90 minutes and 90 questions between you and your Security+ certification. You'll learn lots, and also waste a ton of time memorizing worthless things. Just laugh along with and realize it is not logical.</p>
+          <h3>So. It has come to this</h3>
+          <p>Quarantined at home with a large stockpile of Swiss Cake rolls and nothing to do but study for the CompTIA Security+ exam. And by study I mean practice my Gatsby and React skills while making memes about it. You have been warned. </p>
         </div>
        
        

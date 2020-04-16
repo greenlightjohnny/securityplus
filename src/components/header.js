@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState }from "react";
 import { Link } from "gatsby"
 import Main from './mainstyle.module.scss'
 import useDarkMode from 'use-dark-mode';
@@ -28,7 +28,7 @@ const ListLink = props => (
 )
 
 
-const Header = ()=> {
+function Header() {
     const darkMode = useDarkMode(false);
     const Shock = () => <><img src={Shockedp} /></>
     return (
