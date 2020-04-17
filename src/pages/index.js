@@ -6,6 +6,7 @@ import Pandasvg from '../images/panda.svg'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Move from "../components/move"
+import Navbar from "../components/navbar"
 
 import { Link } from "gatsby"
 import Main from '../components/mainstyle.module.scss'
@@ -13,7 +14,7 @@ const Panda = () => <><img className={Main.panda} style={{ height: `200px`, marg
 const Index = props => (
   <Fragment>
     <Info title="Shocked Security Koala" />
-    <Header />
+    <Navbar />
     <section className={Main.title}>
     <h1 className={Main.topmargin}>CompTIA Security<span style={{ color: `#f11c59`}}>+</span> </h1>
     <h4 className={Main.lowmargin}>Misery. Memes. Mastery.</h4>

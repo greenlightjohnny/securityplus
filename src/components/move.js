@@ -6,7 +6,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 
 const ListLink = props => (
-    <li style={{ display: `inline-block`, marginRight: `1rem` }}>
+    
         
         <AniLink cover bg={`
 
@@ -21,7 +21,7 @@ const ListLink = props => (
 
 {props.children}
 </AniLink>
-    </li>
+
     
 )
 export default ListLink

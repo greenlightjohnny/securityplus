@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
     return (
 
         
-        <React.Fragment style={{ minHeight: `100%`}}>
+        <React.Fragment >
            <Navbar />
     <div style={{ margin: `0 auto`, maxWidth: 800, padding: `1rem 1rem`, }}>
         
