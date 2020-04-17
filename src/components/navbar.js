@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import Style from "./navbar.module.scss"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Shockedp from "../images/high.jpg"
-import classNames from "classnames"
-
+import useDarkMode from 'use-dark-mode';
+import Toggle from "./toggle"
+import Darkmodetoggle from './darkmode'
 
 
 
@@ -34,20 +35,22 @@ const Navlink = props => (
 
 function Navbar() {
     const [navnames, setNavnames] = useState(false)
-   let myanswer = function() {
-
-   }
+    const darkMode = useDarkMode(false);
     
 
     return (
         <div className={Style.container}>
-        <h3><Navlink style={{ display: `inline-block`, marginRight: `1rem` }} to="/">GRIND</Navlink></h3>
-        <nav className={`${Style.mobile} ${navnames ? Style.showmenu : Style.hidemenu} `}>
+                
+               
+    
+        <h3><Navlink to="/">GRIND</Navlink></h3>
+        <Darkmodetoggle />
+        <nav className={`${Style.mobile} ${navnames ? Style.showmenu : Style.hidemenu}`}>
             <ul>
-                <li ><Navlink to="/">{navnames}</Navlink></li>
-                <li><Navlink to="/">GRIND</Navlink></li>
-                <li ><Navlink to="/">GRIND</Navlink></li>
-                <li ><Navlink to="/">GRIND</Navlink></li>
+                <li onClick={() =>  setNavnames(false) }><Navlink to="/">Home</Navlink></li>
+                <li><Navlink to="/">Sections</Navlink></li>
+                <li ><Navlink to="/">Rants</Navlink></li>
+                <li ><Navlink to="/">About</Navlink></li>
             </ul>
         </nav>
 

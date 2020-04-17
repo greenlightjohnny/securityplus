@@ -24,7 +24,8 @@ div[role="group"][tabindex] {
 .light-mode {
     background-color:#ffff;
     color: #333;
-    transition: background-color 0.3s ease;
+    transition: background-color 2s ease;
+   
     --crossline: black;
   }
 .dark-mode {
@@ -35,6 +36,8 @@ div[role="group"][tabindex] {
   --textTitle: #222;
   --textLink: blue;
   --crossline: #f11c59;
+  transition: background-color 2s ease;
+  
 
   --hr: hsla(0, 0%, 0%, 0.2);
 

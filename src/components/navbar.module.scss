@@ -9,7 +9,7 @@
 
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     display: flex;
     flex: 1;
@@ -107,6 +107,7 @@
         list-style: none;
         margin: 0 auto;
         margin-top: 4rem;
+        font-weight: bold;
 
         @include tabletL {
             display: flex;
@@ -114,6 +115,11 @@
             margin-top: 0;
             flex-direction: row;
             justify-content: flex-end;
+
+            li {
+                margin-left: 30px;
+                margin-top: 10px;
+            }
 
         }
     }
@@ -137,7 +143,42 @@
     height: 100vh;
     transition: all ease-in-out 1s;
     transition: height 400ms linear;
-    
+    z-index: 2;
+ 
+    ul {
+        list-style: none;
+        margin: 0 auto;
+        margin-top: 4rem;
+        font-weight: bold;
+
+        @include tabletL {
+            display: flex;
+            flex: 1;
+            margin-top: 0;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            li {
+                margin-left: 30px;
+                margin-top: 10px;
+            }
+
+        }
+    }
+      
+
+
+     @include tabletL {
+        display: inline-block;
+       // margin-left: 40%;
+        //padding-top: 1rem;
+        //padding-bottom: 1rem;
+        height: 53px;
+        opacity: 1;
+        
+        margin-right: 5%;
+    }
+
 }
 
 ///////////NAV Button//////////////////
@@ -156,6 +197,7 @@
     margin-top: 4px;
     color: #010101;
     cursor: pointer;
+    z-index: 3;
     
     @include tabletL {
         display: none;

@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
         
         <React.Fragment >
            <Navbar />
-    <div style={{ margin: `0 auto`, maxWidth: 800, padding: `1rem 1rem`, }}>
+    <div style={{ margin: `0 auto`, maxWidth: 900, padding: `1rem 1rem`, }}>
         
         
         {children}
