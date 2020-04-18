@@ -57,9 +57,9 @@ const Index = props => (
         <Img fluid={props.data.front4.childImageSharp.fluid} />
         </div>
 
-        <div>
+        <div className={Main.lleft}>
           <h3>So. It has come to this</h3>
-          <p>Quarantined at home with a large stockpile of Swiss Cake rolls and nothing to do but study for the CompTIA Security+ exam. And by study I mean practice my Gatsby and React skills while making memes about it. You have been warned. </p>
+          <p >Quarantined at home with a large stockpile of Swiss Cake rolls and nothing to do but study for the CompTIA Security+ exam. And by study I mean practice my Gatsby and React skills while making memes about it. You have been warned. </p>
         </div>
        
        
@@ -68,7 +68,7 @@ const Index = props => (
 
  <div className={Main.miniflex}>
       
-        <div>
+        <div className={Main.rright}>
           <h3>Irrelevant</h3>
           <p>Lots of information on the test is not relevant to the vast majority of people forced to take it as a job requirement. There is a big difference between working around sensitive documents and configuring an 802.1x remote RADIUS authentication server for your WPA2 Enterprise WiFi.  </p>
           <h3>Less Security</h3>
@@ -93,7 +93,7 @@ const Index = props => (
       <Img fluid={props.data.front6.childImageSharp.fluid} />
       </div>
 
-      <div>
+      <div className={Main.lleft}>
         <h3>Just for fun!</h3>
         <p>This site is just me in quarantine studying for the Security+ exam and making memes about it. I am also using this as a chance to practice my Gatsby and React skills, clearly my meme game is already top notch. Don't take this seriously, except for the meme quality.</p>
        
@@ -107,7 +107,7 @@ const Index = props => (
 
     
       
-      <div>
+      <div className={Main.b}>
         <h3>Exam catogery breakdown:</h3>
       <Img fluid={props.data.front.childImageSharp.fluid} />
       <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>These can be learned in any order. In fact, they are all kind of intertwined so you will be anyway. This site starts with section 4.0</p>

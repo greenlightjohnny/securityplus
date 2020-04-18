@@ -48,9 +48,9 @@ function Navbar() {
         <nav className={`${Style.mobile} ${navnames ? Style.showmenu : Style.hidemenu}`}>
             <ul>
                 <li onClick={() =>  setNavnames(false) }><Navlink to="/">Home</Navlink></li>
-                <li><Navlink to="/">Sections</Navlink></li>
-                <li ><Navlink to="/">Rants</Navlink></li>
-                <li ><Navlink to="/">About</Navlink></li>
+                <li><Navlink to="/memes">Memes</Navlink></li>
+                <li ><Navlink to="/lobbying">Lobbying</Navlink></li>
+                <li ><Navlink to="/about">About</Navlink></li>
             </ul>
         </nav>
 

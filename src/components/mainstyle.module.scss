@@ -1,5 +1,17 @@
 @import "../styles/global.css";
 
+@mixin tabletL {
+    @media (min-width: 900px) {
+      @content;
+    }
+  }
+
+
+@mixin tabletL2 {
+    @media (min-width: 786px) {
+      @content;
+    }
+  }
 
 .fademefam {
     display: flex;
@@ -7,6 +19,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 2rem;
 
     h4 {
         margin-top: 0;
@@ -46,7 +61,7 @@ h3, h1, h4 {
 
 .container {
     max-width: 900px;
-    margin: 1rem auto;
+    margin: 0 auto;
 }
 
 .pandafloat {
@@ -125,22 +140,55 @@ h3, h1, h4 {
     flex-wrap: wrap;
     margin-top: 2rem;
     max-width: 900px;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin: 2rem auto;
+    margin-bottom: 4rem;
+    //padding-left: 1rem;
+    //padding-right: 1rem;
     justify-content: center;
      *  {
         max-width: 700px;
         min-width: 372px;
         height: 100%;
-        
+        //margin-left: 1rem;
+        //margin-right: 1rem;
         flex: 1;
         
         
     }
     h3, p {
         margin-top: 0;
-        padding-left: 1rem;
-        padding-right: 1rem;
+       
+        //padding-left: 1rem;
+        //padding-right: 1rem;
+        
+        
+
+       
     }
+
+    @include tabletL2 {
+        .lleft {
+            margin-left: 1rem;
+        }
+
+        .rright {
+            margin-right: 1rem;
+        }
+    }
+
+
+
+ .lleft {
+            //border: 2px dashed #7e92a5;
+            
+        }
+
+        .rright {
+           // margin-right: 1rem;
+        }
+    
 }
 
 .linkc {
@@ -168,6 +216,11 @@ h3, h1, h4 {
 // //     font-size: .8rem;
 // //     padding: 1rem;
 // // }
+
+.b {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
 .footersticky {
      
