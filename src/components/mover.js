@@ -5,11 +5,11 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 
 
-const Goleft = (props) => (
+const Goright = (props) => (
     
         
-        <AniLink cover direction="up" bg={`
-
+        <AniLink cover direction="right" bg={`
+        
     url(${Shockedp})
     center / cover   /* position / size */
     no-repeat        /* repeat */
@@ -17,7 +17,7 @@ const Goleft = (props) => (
     padding-box      /* origin */
     content-box      /* clip */
     white            /* color */
-  `}  to={props.to}>
+  `}  to={props.to} style={{ float: `right`}}>
 
 {props.children}
 </AniLink>
@@ -30,18 +30,18 @@ const Goleft = (props) => (
 
 
 
-const Move = (props) => {
+const Mover = (props) => {
 
 
 
     return (
 
       
-               <Goleft to={props.to} style={{  color: `#6246ea` }} >{props.children}</Goleft>
+               <Goright to={props.to}  >{props.children}</Goright>
                 
                 
               
    )
  }
 
- export default Move
+ export default Mover

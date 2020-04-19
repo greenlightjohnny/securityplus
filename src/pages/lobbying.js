@@ -9,7 +9,7 @@ const About = (props) => (
 
     <Layout>
         <h1>Lobbying</h1>
-        <p>In a shocking development, it recently came to light that the CompTIA was working behind the scenes in Washington DC lobbying against a "right to repair bill".</p>
+        <p>In a shocking development, it recently came to light that the CompTIA was working behind the scenes in Washington DC lobbying against a consumer protection "right to repair bill".</p>
 
         <h3>Only Vendor Certified Repairs</h3>
         <p>Despite being a "vendor neutral" certification organization, the CompTIA somehow decided it was a good idea to lobby against this. Apparently they think it is a "security risk" and some repairs can be "complicated and dangerous". You can read it all <a href="https://www.capitol.hawaii.gov/Session2020/Testimony/SB2496_TESTIMONY_CPH_02-06-20_.PDF">here</a> on paperwork submitted to the Hawaii State Government.  Keep in mind they are talking about cell phones and computers, and have a good laugh.
@@ -23,7 +23,7 @@ const About = (props) => (
         </p>
 
         <h3>Caught</h3>
-        <p>After getting caught red handed the CompTIA stepped back from arguing that your phone could blow up while being repaired unless it was performed at a vendor certified shop, and for YOUR safety it should not be allowed.</p>
+        <p>After getting caught red handed the CompTIA stepped back from arguing that your phone could blow up while being repaired unless it was performed at a vendor certified shop, and for YOUR safety it should not be allowed. Read their lame press release <a href="https://www.comptia.org/newsroom/2020/02/21/comptia-steps-back-from-lobbying-activity-related-to-right-to-repair-legislation">here.</a></p>
         <Img fluid={props.data.front2.childImageSharp.fluid} />
 
         <h3>Questions Arise</h3>
@@ -66,15 +66,57 @@ const About = (props) => (
 
            <p></p>
 
+           <h3>Out of Date</h3>
+           <p>Here is a quote from a random Reddit user on the CompTIA and their Network+ exam. I find them to be a more credible source than the CompTIA. <a href="https://www.reddit.com/user/lordderplythethird/">u/lordderplythethird</a> dropping some harsh truth bombs. If the CompTIA was not spending more on advertising and promotion than test development it might not look as bad. When you are certification company and spend more on "conferences" than test development, your tests might not be the best. Luckily, the CompTIA has lobbyist firms to make sure the CompTIA exams are a requirement for many Government jobs.
+
+           <Img fluid={props.data.front12.childImageSharp.fluid} />
+
+           </p>
+
            <h3>Who Paid the Lobbyists?</h3>
            <p>I still don't know where the money to pay the lobbyists came from. The CompTIA claims 0 was spent for lobbying on the 990, so it leaves you to wonder how they filtered the money down to them. When you have a lobbyist introducing himself as representing the CompTIA, and CompTIA letterhead on documents submitted to the US Government, why does that nonprofit claim 0 was spent on lobbying on their 990?</p>
+
+           <p>I am curious as to what they consider a businesses expenses. Leasing a BMW? How about the travel, are those flights in first class?</p>
 
            <h3>CompTIA Member Services, LLC</h3>
            <p>There is a record of a <a href="https://projects.propublica.org/represent/lobbying/search?search=comptia+AND+member+AND+services">CompTIA Member Services</a> hiring lobbying firms. How the CompTIA actually paid them is a mystery, along with why they are an LLC.</p>
 
-        <div><Img fluid={props.data.front.childImageSharp.fluid} />
-        <i>https://www.comptia.org/newsroom/2020/02/21/comptia-steps-back-from-lobbying-activity-related-to-right-to-repair-legislation</i>
-        </div>
+           <h1>Creating IT Futures</h1>
+           <p>In 2018 the CompTIA gave a nonprofit call "Creating IT Futures" almost 3 million. Creating IT futures gives lucky individuals a free 8 week class, which is training to pass the CompTIA  A+ exam. 
+           <Img fluid={props.data.front14.childImageSharp.fluid} /><br></br>
+           This nonprofit had a mission to educate minorities in tech. Very noble.
+           <Img fluid={props.data.front15.childImageSharp.fluid} /><br></br>
+           They even ask for donations on their website:
+           <Img fluid={props.data.front16.childImageSharp.fluid} />
+           </p>
+
+           <h3>Good?</h3>
+           <p>Just when you thought the CompTIA had at least done SOMETHING decent with their money, you get slapped in the face with the truth. As it turns out, the CompTIA created this nonprofit. Next they donated 3 million to it. Where do you think most of that 3 million went? Training under-represented people in the IT field? If you guessed "executive pay", you would be a winner! Read their 990 tax filing <a href="https://projects.propublica.org/nonprofits/display_990/364295421/12_2019_prefixes_35-38%2F364295421_201812_990_2019120616930954">here</a>, or take a look at the juicy screenshots below.
+           <Img fluid={props.data.front17.childImageSharp.fluid} />
+           
+
+           </p>
+
+           <p>
+           How much do you think went to the training program? Apparently around 600k. Wow, such amazing work guys!
+
+<Img fluid={props.data.front18.childImageSharp.fluid} />
+           </p>
+
+           <p>How many students did they train? They don't say, but I am guessing the cost per student is insanely high. 20k in expenses per student for a class that normally costs under 1k from an actual for profit test preparation company is my guess. </p>
+
+           <p>Why? Why would a nonprofit create another nonprofit and give them money? Why not just do it themselves? I'm not sure, but from the looks of things I'm betting they just needed a way to legally pay some people. Easy to fund another nonprofit and hide more executive pay within it, instead of making it look bad coming directly from your main nonprofit. Does anyone really believe that the goal of Creating IT Futures was to help people enter the IT field?</p>
+
+           <h3>What Nerve!</h3>
+           <p>The part about this that REALLY annoys me is when they ask for donations at the <a href="https://www.creatingitfutures.org/" >Creating IT Futures </a>website. Honestly seems crazy, a "nonprofit" that appears to have been literally set up as a way to funnel money, asking for donations? And spending over 300k on advertising? You are offering free classes, you should have no trouble going around to employment centers and getting a waiting list of students. Instead, 300k, almost 10% of your budget is spent on advertising? I'd love to see a breakdown of that advertising budget and where it went.
+           
+           </p>
+
+           <h3>"A corporation or an association that conducts business for the benefit of the general public without shareholders and without a profit motive."</h3>
+           <p>In my opinion, neither the CompTIA or Creating IT Futures meets this definition of a nonprofit.</p>
+        <Img fluid={props.data.front.childImageSharp.fluid} />
+        
+        
         
 
     </Layout>
@@ -203,9 +245,81 @@ front11: file(relativePath: { eq: "totalexp.png" }) {
     }
   }
 }
+
+
+
+front12: file(relativePath: { eq: "outofdate.png" }) {
+  childImageSharp {
+   
+    fluid(maxWidth: 900) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+
+
+front13: file(relativePath: { eq: "outofdate.png" }) {
+  childImageSharp {
+   
+    fluid(maxWidth: 900) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+
+
+
+front14: file(relativePath: { eq: "creating.png" }) {
+  childImageSharp {
+   
+    fluid(maxWidth: 900) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
   
 
-  
+
+front15: file(relativePath: { eq: "helping.png" }) {
+  childImageSharp {
+   
+    fluid(maxWidth: 900) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+
+
+
+front16: file(relativePath: { eq: "donate.png" }) {
+  childImageSharp {
+   
+    fluid(maxWidth: 900) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+
+
+
+front17: file(relativePath: { eq: "createpay.png" }) {
+  childImageSharp {
+   
+    fluid(maxWidth: 900) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+
+
+front18: file(relativePath: { eq: "programdev.png" }) {
+  childImageSharp {
+   
+    fluid(maxWidth: 900) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
 
   }
 `

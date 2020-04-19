@@ -71,8 +71,8 @@ const Index = props => (
         <div className={Main.rright}>
           <h3>Irrelevant</h3>
           <p>Lots of information on the test is not relevant to the vast majority of people forced to take it as a job requirement. There is a big difference between working around sensitive documents and configuring an 802.1x remote RADIUS authentication server for your WPA2 Enterprise WiFi.  </p>
-          <h3>Less Security</h3>
-          <p>By making the average test taker waste time memorizing protocol port numbers, the CompTIA takes away time that could be spent learning relevant concepts.</p>
+          <h3>Less Secure</h3>
+          <p>By making the average test taker waste time memorizing irrelevant subjects, the CompTIA takes away time that could be spent learning relevant concepts.</p>
         </div>
 
 

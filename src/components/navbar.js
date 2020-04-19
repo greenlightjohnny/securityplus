@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Style from "./navbar.module.scss"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-import Shockedp from "../images/high.jpg"
+import Shockedp from "../images/relong2.jpg"
 import useDarkMode from 'use-dark-mode';
 import Toggle from "./toggle"
 import Darkmodetoggle from './darkmode'

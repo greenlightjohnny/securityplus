@@ -1,11 +1,11 @@
 import React from "react"
 import Info from "../components/info"
 import Layout from "../components/layout"
-
+import Move from "../components/move"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
-
+import Mover from "../components/mover"
 
 const Chap = props => (
     <Layout>
@@ -40,7 +40,10 @@ CHAP provides protection against replay attacks by the peer through the use of a
             <p style={{ fontStyle: `italic`, fontSize: `.8rem`}}>
             </p>
 
-<Link to="/PAP">Previous: PAP</Link> <Link style={{ float: `right`}} to="/mschap">Next: MSCHAP</Link>
+
+            <Move to="/pap">Previous: PAP</Move> <Mover to="mschap" >Next: MSCHAP</Mover>
+{/* 
+<Link to="/PAP">Previous: PAP</Link> <Link style={{ float: `right`}} to="/mschap">Next: MSCHAP</Link> */}
     </Layout>
 )
 export default Chap
