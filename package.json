@@ -16,7 +16,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "classnames": "^2.2.6",
-    "gatsby": "^2.20.12",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.3.1",
     "gatsby-plugin-dark-mode": "^1.1.1",
     "gatsby-plugin-emotion": "^4.2.1",
